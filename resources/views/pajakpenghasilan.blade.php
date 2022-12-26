@@ -9,7 +9,7 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  <title>Pajak Penghasilan</title>
+  <title>Pajak Penghasilan | E-Bupot</title>
   <style>
     * {
       box-sizing: border-box;
@@ -216,10 +216,10 @@
       <div class="" style="background-color: #FFFFFF ; padding: 10px 20px 0px 20px; width:860px">
         <nav style="background-color: rgb(255, 157, 49); border-radius: 8px 8px 8px 8px; box-shadow: 2px 2px 2px 2px lightgrey; padding: 10px 10px 10px 10px ">
           <div class="nav nav-tabs" id="nav-tab" role="tablist" style="height:40px; border-bottom:0px">
-            <a style="border-radius: 8px 40px 0 0; padding: 8px 20px; text-align: center; height:40px;" href= "{{url('/dashboard')}}" class="nav-link" type="button">Dashboard</a>
+            <a style="border-radius: 2px 30px 2px 30px; padding: 8px 20px; text-align: center; height:40px;" href= "{{url('/dashboard')}}" class="nav-link" type="button">Dashboard</a>
             <a style="border-radius: 2px 30px 2px 30px; padding: 8px 20px; text-align: center;" href= "{{url('/pajakpenghasilan')}}" class="nav-link active" id="nav-pajak-tab" data-bs-toggle="tab" data-bs-target="#nav-pajak" type="button" role="tab" aria-controls="nav-pajak" aria-selected="true">Pajak Penghasilan</a>
-            <a href= "{{url('/sptmasa')}}" style="border-radius: 8px 40px 0 0; padding: 8px 20px; text-align: center;" class="nav-link" type="button" >SPT Masa</a>
-            <a style="border-radius: 8px 40px 0 0; padding: 8px 20px; text-align: center;" href= "{{url('/pengaturan')}}" class="nav-link" type="button">Pengaturan</a>
+            <a href= "{{url('/sptmasa')}}" style="border-radius:2px 30px 2px 30px; padding: 8px 20px; text-align: center;" class="nav-link" type="button" >SPT Masa</a>
+            <a style="border-radius: 2px 30px 2px 30px; padding: 8px 20px; text-align: center;" href= "{{url('/pengaturan')}}" class="nav-link" type="button">Pengaturan</a>
             <img src="{{ asset('logobupot.jpg') }}" width="100px" style="margin-left:120px; height:103%; width:15%;" alt="" srcset="">
         </div>
         </nav>

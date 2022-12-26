@@ -10,6 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 
   <title>Rekam Non Residen | E-Bupot</title>
   <style>
@@ -782,75 +783,84 @@ function generateDipotong(){
 
   function addTableHarta($this) {
 
-    var tahunpajak = document.querySelector('#tahunpajak').value
-    console.log(tahunpajak);
-      var masapajak = document.querySelector('#masapajak').value
-    console.log(masapajak);
-      var nama = document.querySelector('#nama').value
-    console.log(nama);
-    
-    var identitas = $('input[name="identitas"]:checked').val();
-    console.log(identitas);
+var tahunpajak = document.querySelector('#tahunpajak').value
+console.log(tahunpajak);
+  var masapajak = document.querySelector('#masapajak').value
+console.log(masapajak);
+  var nama = document.querySelector('#nama').value
+console.log(nama);
+var tin = $('input[name="tin"]:checked').val();
+console.log(tin);
 
-      var no_identitas = document.querySelector('#no_identitas').value
-    console.log(no_identitas);
-      var qq = document.querySelector('#qq').value
-    console.log(qq);
-      var kode_objek_pajak = document.querySelector('#kode_objek_pajak').value
-      var skb = document.querySelector('#skb').value
-      var dt = document.querySelector('#dt').value
-      var suket = document.querySelector('#suket').value
-      var lainnya = document.querySelector('#lainnya').value
-    console.log(kode_objek_pajak);
-      var fasilitas_pajak_penghasilan = $('input[name="fasilitas_pajak_penghasilan"]:checked').val();
-    console.log(fasilitas_pajak_penghasilan);
-      var jumlah_penghasilan_bruto = document.querySelector('#jumlah_penghasilan_bruto').value
-    console.log(jumlah_penghasilan_bruto);
-    var tarif = document.querySelector('#netto').value
-    console.log(netto);
-      var tarif = document.querySelector('#tarif').value
-    console.log(tarif);
-      var jumlah_setor = document.querySelector('#jumlah_setor').value
-    console.log(jumlah_setor);
-      var pengaturan_id = document.querySelector('#pengaturan_id').value
-    console.log(pengaturan_id);
-      
-      
-            var data = {
-              tahun_pajak: tahunpajak,
-              masa_pajak: masapajak,
-              nama: nama,
-              identitas: identitas,
-              no_identitas: no_identitas,
-              qq: qq,
-              kode_objek_pajak: kode_objek_pajak,
-              fasilitas_pajak_penghasilan: fasilitas_pajak_penghasilan,
-              skb: skb,
-              dt: dt,
-              suket: suket,
-              lainnya: lainnya,
-              jumlah_penghasilan_bruto: jumlah_penghasilan_bruto,
-              netto: netto,
-              tarif: tarif,
-              jumlah_setor: jumlah_setor,
-              pengaturan_id: pengaturan_id,
-              nama_dokumen: $('#nama_dokumen2').attr('data-value'),
-              no_dokumen: $('#no_dokumen2').attr('data-value'),
-              tgl_dokumen: $('#tgl_dokumen2').attr('data-value')
-            }
-
-            console.log(data);
-            $.ajax({
-                
-                type: "POST",
-                url: 'http://localhost:8000/api/tambahpphnon',
-                data: data,
-                success: function(res) {
-                    console.log(res)
-                }
-            });
-
+  var alamat = document.querySelector('#alamat').value
+console.log(alamat);
+  var negara = document.querySelector('#negara').value
+console.log(negara);
+var tempatlahir = document.querySelector('#tempatlahir').value
+console.log(tempatlahir);
+var tgllahir = document.querySelector('#tgllahir').value
+console.log(tgllahir);
+var nopaspor = document.querySelector('#nopaspor').value
+console.log(nopaspor);
+var nokitab = document.querySelector('#nokitab').value
+console.log(nokitab);
+  var kode_objek_pajak = document.querySelector('#kode_objek_pajak').value
+  var skdwpln = document.querySelector('#skdwpln').value
+  var dtp = document.querySelector('#dtp').value
+  var lainnya = document.querySelector('#lainnya').value
+console.log(kode_objek_pajak);
+  var fasilitas_pajak_penghasilan = $('input[name="fasilitas_pajak_penghasilan"]:checked').val();
+console.log(fasilitas_pajak_penghasilan);
+  var jumlah_penghasilan_bruto = document.querySelector('#jumlah_penghasilan_bruto').value
+console.log(jumlah_penghasilan_bruto);
+var tarif = document.querySelector('#netto').value
+console.log(netto);
+  var tarif = document.querySelector('#tarif').value
+console.log(tarif);
+  var jumlah_setor = document.querySelector('#jumlah_setor').value
+console.log(jumlah_setor);
+  var pengaturan_id = document.querySelector('#pengaturan_id').value
+console.log(pengaturan_id);
+  
+  
+        var data = {
+          tahun_pajak: tahunpajak,
+          masa_pajak: masapajak,
+          nama: nama,
+          tin: tin,
+          alamat: alamat,
+          negara: negara,
+          tempatlahir: tempatlahir,
+          tgllahir: tgllahir,
+          nopaspor: nopaspor,
+          nokitab: nokitab,
+          kode_objek_pajak: kode_objek_pajak,
+          fasilitas_pajak_penghasilan: fasilitas_pajak_penghasilan,
+          skdwpln: skdwpln,
+          dtp: dtp,
+          lainnya: lainnya,
+          jumlah_penghasilan_bruto: jumlah_penghasilan_bruto,
+          netto: netto,
+          tarif: tarif,
+          jumlah_setor: jumlah_setor,
+          pengaturan_id: pengaturan_id,
+          nama_dokumen: $('#nama_dokumen2').attr('data-value'),
+          no_dokumen: $('#no_dokumen2').attr('data-value'),
+          tgl_dokumen: $('#tgl_dokumen2').attr('data-value')
         }
+
+        console.log(data);
+        $.ajax({
+            
+            type: "POST",
+            url: 'http://localhost:8000/api/tambahpphnon',
+            data: data,
+            success: function(res) {
+                console.log(res)
+            }
+        });
+
+    }
 
         function handlerRadioSelect1(){
 
