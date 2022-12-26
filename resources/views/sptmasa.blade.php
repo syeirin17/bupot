@@ -29,7 +29,7 @@
     .content {
       background-image: url("{{ asset('poltek.jpeg') }}");
       background-repeat: no-repeat;
-      background-size: cover; */
+      background-size: cover; 
       height: 620px;
     }
 

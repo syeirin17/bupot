@@ -49,6 +49,7 @@ Route::get('impordata', [PPController::class, 'impordata']);
 Route::get('posting', [PPController::class, 'posting']); 
 Route::get('suratbupotpasal', [PPController::class, 'suratbupotpasal']); 
 Route::get('suratbupotsendiri', [PPController::class, 'suratbupotsendiri']); 
+Route::get('download_folder', [PPController::class, 'getDownload']); 
 
 
 

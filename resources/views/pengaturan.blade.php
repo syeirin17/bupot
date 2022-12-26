@@ -272,8 +272,8 @@
                     <label class="form-check-label" for="Identitas">NPWP</label>
                   </div>
                   <div class="col-2">
-                    <input type="text" value="{{ $nama }}" id="namas" hidden>
-                    <input type="text" value="{{ $npwp }}" id="npwps" hidden>
+                    <input type="text" name="nama" id="namas" hidden>
+                    <input type="text" name="npwp" id="npwps" hidden>
                     <input class="form-check-input" type="radio" name="identitas" id="flexRadioDefault2" value="nik" onclick="changeform2(this)" required>
                     <label class="form-check-label" for="identitas">NIK</label>
                   </div>
@@ -283,7 +283,7 @@
                     <label for="">NPWP</label>
                   </div>
                   <div class="col-6">
-                    <input class="form-control" style="width:75%; height:85%;" type="text" id="npwp" maxlength="21" placeholder="" aria-label="default input" disabled>
+                    <input class="form-control" style="width:75%; height:85%;" type="text" id="npwp" maxlength="21" placeholder="" aria-label="default input">
                   </div>
                 </div>
                 <div class="row">

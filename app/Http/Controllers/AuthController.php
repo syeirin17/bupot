@@ -66,8 +66,8 @@ class AuthController extends Controller
         ]);
         $response = Http::post('http://localhost:8000/api/register',$request->all());
 
-         
-        return redirect("dashboard")->withSuccess('You have signed-in');
+         dd($response->json());
+        // return redirect("login")->withSuccess('You have signed-in');
     }
 
     public function create(array $data)

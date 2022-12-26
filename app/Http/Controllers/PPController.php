@@ -204,6 +204,11 @@ class PPController extends Controller
         return redirect("login")->withSuccess('Login details are not valid');
     }
 
+    public function getDownload(){
+
+        $file = public_path()."/formulir.xlsx";
+        return response()->download($file, 'formulir.xlsx');
+    }
       
     
 }

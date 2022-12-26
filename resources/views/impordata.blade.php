@@ -257,8 +257,8 @@
             <div class="card border-light mb-4" style="max-width: 18rem;">
               <div class="card-header bg-warning text-white" style="font-weight: bold">Petunjuk Pengisian</div>
               <div class="card-body text-dark">
-                <p class="card-text">Deskripsi Form: Form ini digunakan untuk menggunggah data bukti pemotongan dalam format excel(.xls.). Ditujukan bagi Pemotong PPh yang menerbitkan bukti pemotongan dalam jumlah banyak yang tidak dapat direkam menggunakan fitur key in.</p>
-                <p class="card-text">Untuk format excel yang diupload Anda dapat mengunduhnya <a href="{{url('/downloadfolder/download.xlsx')}}" download="download.xlsx" class="link-primary">disini</a></p>
+                <p class="card-text">Deskripsi Form: Form ini digunakan untuk menggunggah data bukti pemotongan dalam format excel(.xlsx.). Ditujukan bagi Pemotong PPh yang menerbitkan bukti pemotongan dalam jumlah banyak yang tidak dapat direkam menggunakan fitur key in.</p>
+                <p class="card-text">Untuk format excel yang diupload Anda dapat mengunduhnya <a href="{{url('/download_folder')}}" class="link-primary">disini</a></p>
                 <p class="card-title">Terdapat 2 bagian pada form</p>
               </div>
             </div>
@@ -321,11 +321,11 @@
                     <div class="col">
                       <div class="form-group">
                         <label for="exampleFormControlFile1">Upload file</label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1" accept=".xls">
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1" accept=".xlsx">
                       </div>
                 </form>
                 <div class="col">
-                  <p class="text-secondary"><small>Ukuran file maksimal 2MB berformat .xls</small></p>
+                  <p class="text-secondary"><small>Ukuran file maksimal 2MB berformat .xlsx</small></p>
                   <p class="text-danger"><small> Pastikan tidak melakukan impor excel dengan data yang sama apabila terdapat excel yang belum selesai diproses sebelumnya.</small></p>
                 </div>
               </div>
