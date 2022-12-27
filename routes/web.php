@@ -53,8 +53,8 @@ Route::get('download_folder', [PPController::class, 'getDownload']);
 
 
 
-Route::get('/tes', function () {
-    return view('tes');
+Route::get('/sptmasa', function () {
+    return view('sptmasa');
 });
 Route::get('/penyiapanspt', function () {
     return view('penyiapanspt');

@@ -597,8 +597,7 @@
                     <label for="validationDefault04" class="form-label">Penandatangan
                       Sebagai</label>
                     <select name="pilihsebagai" class="form-select" required>
-                      {{-- <option value="{{ $pengaturan['bertindak_sebagai'] }}">{{ $pengaturan['bertindak_sebagai'] }}</option> --}}
-
+                      <option value="{{ $pengaturan['bertindak_sebagai'] }}">{{ $pengaturan['bertindak_sebagai'] }}</option>
                     </select>
                   </div>
                   <div class="col-md-4">
@@ -607,7 +606,7 @@
                     <select name="pilihbupot" class="form-select" id="pengaturan_id" required>
                       <option selected disabled value="">Pilih Penandatangan
                       </option>
-                      {{-- <option value="{{ $pengaturan['user']['id'] }}">{{ $pengaturan['user']['name'] }}</option> --}}
+                      <option value="{{ $pengaturan['user']['id'] }}">{{ $pengaturan['user']['name'] }}</option>
                     </select>
                   </div>
                   <div style="padding:10px;">
@@ -617,21 +616,21 @@
                         Pemungutan Unifikasi yang menyebabkan kelebihan
                         pemotongan/pemungutan PPh, maka pihak yang akan diajukan:</p>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="kelebihan_pemotongan" id="pengembalian">
                         <label class="form-check-label" for="flexRadioDefault1">
                           Pengembalian atas pajak yang tidak seharusnya terutang oleh
                           Pemotong dan/ atau Pemungut PPh
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <input class="form-check-input" type="radio" name="kelebihan_pemotongan" id="pemindahbukuan" checked>
                         <label class="form-check-label" for="flexRadioDefault2">
                           Pemindahbukuan oleh Pemotong dan/ atau Pemungut PPh
                         </label>
                       </div>
                       <div style="padding:25px;"></div>
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <input class="form-check-input" type="checkbox" value="" id="pernyataan" name="pernyataan">
                         <label class="form-check-label" for="defaultCheck1">
                           Dengan ini saya menyatakan bahwa Bukti Pemotongan/Pemungutan
                           Unifikasi yang telah saya isi dengan benar dan telah saya
@@ -859,7 +858,12 @@
     console.log(jumlah_setor);
     var pengaturan_id = document.querySelector('#pengaturan_id').value
     console.log(pengaturan_id);
-
+    var pemindahbukuan = document.querySelector('#pemindahbukuan').value
+    console.log(pemindahbukuan);
+    var pengembalian = document.querySelector('#pengembalian').value
+    console.log(pengembalian);
+    var pernyataan = document.querySelector('#pernyataan').value
+    console.log(pernyataan);
 
     var data = {
       tahun_pajak: tahunpajak,
@@ -885,6 +889,9 @@
       nama_dokumen: $('#nama_dokumen2').attr('data-value'),
       no_dokumen: $('#no_dokumen2').attr('data-value'),
       tgl_dokumen: $('#tgl_dokumen2').attr('data-value')
+      pemindahbukuan: pemindahbukuan,
+      pengembalian: pengembalian,
+      pernyataan: pernyataan
     }
 
     console.log(data);
