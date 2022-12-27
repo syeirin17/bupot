@@ -142,6 +142,7 @@
       color: grey; 
       border: 2px solid lightgray;
       border-radius: 5px; 
+      width: 25px;
     }
 
     .button2:hover {
@@ -304,8 +305,22 @@
                             <label for="">Masa Pajak</label>
                         </div>
                         <div class="col">
-                            <input class="form-control" type="text" name="masa_pajak" placeholder="" aria-label="default input" value="{{ date('F',time()) }}" readonly>
-                        </div>
+                        <select class="form-select" id="masapajak" name="masapajak" required>
+                          <option selected disabled value="">Pilih Masa Pajak</option>
+                          <option>JANUARI</option>
+                          <option>FEBRUARI</option>
+                          <option>MARET</option>
+                          <option>APRIL</option>
+                          <option>MEI</option>
+                          <option>JUNI</option>
+                          <option>JULI</option>
+                          <option>AGUSTUS</option>
+                          <option>SEPTEMBER</option>
+                          <option>OKTOBER</option>
+                          <option>NOVEMBER</option>
+                          <option>DESEMBER</option>
+                        </select>
+                                              </div>
                     </div>
                     <div style="padding:5px;"></div>
                     <div class="row" style="padding-left: 15%; padding-right:15%;margin-bottom: 10px;">
@@ -340,16 +355,16 @@
                             <label for="">Tanggal Setor</label>
                         </div>
                         <div class="col">
-                            <input class="form-control" type="text" name="tanggal_setor" placeholder="" aria-label="default input" value="{{ date('d-m-Y',time()) }}" readonly>
+                        <input type="date" value="2023-01-01" style="width: 100%;" />
                         </div>
                     </div>
                     <div class="container">
-                      <div class="row" style="padding: 0% 0% 10% 45%">
+                      <div class="row" style="padding: 4% 0% 10% 45%">
                         <div class="col">
-                            <button class="button button1" type="submit">
-                              <span style="font-size: 18px">Simpan</span></button>
-                            <button class="button button2" type="riset">
-                              <span style="font-size: 18px">Batal</span></button>
+                            <a href="{{ url('/sptmasa') }}" class="button button1" type="submit">
+                              <span style="font-size: 18px">Simpan</span></a>
+                            <a href="{{ url('/sptmasa') }}" class="button button2" style="" type="riset">
+                              <span style="font-size: 18px">Batal</span></a>
                         </div>
                       </div>
                     </div>  

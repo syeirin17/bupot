@@ -1010,7 +1010,7 @@
                         <label for="validationDefault04" class="form-label">Penandatangan
                           Sebagai</label>
                         <select name="pilihsebagai" class="form-select" required>
-                          {{-- <option value="{{ $pengaturan['bertindak_sebagai'] }}">{{ $pengaturan['bertindak_sebagai'] }}</option> --}}
+                          <option value="{{ $pengaturan['bertindak_sebagai'] }}">{{ $pengaturan['bertindak_sebagai'] }}</option>
 
                         </select>
                       </div>
@@ -1020,7 +1020,7 @@
                         <select name="pilihbupot" class="form-select" id="pengaturan_id" required>
                           <option selected disabled value="">Pilih Penandatangan
                           </option>
-                          {{-- <option value="{{ $pengaturan['user']['id'] }}">{{ $pengaturan['user']['name'] }}</option> --}}
+                          <option value="{{ $pengaturan['user']['id'] }}">{{ $pengaturan['user']['name'] }}</option>
                         </select>
                       </div>
                       <div style="padding:10px;">
@@ -1064,9 +1064,9 @@
                     <div class="row" style="padding-left: 57%; padding-right:55%;">
                       <div class="col">
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                          <button href="{{ url('/daftarbuktipotongBPPs') }}" onclick="addTableHarta(this)" class="button button1" type="button">
+                          <a href="{{ url('/daftarbuktipotongBPPs') }}" onclick="addTableHarta(this)" class="button button1" type="button">
                             <span>Simpan</span></a>
-                            <button class="button button2" type="button">
+                            <a class="button button2" type="button">
                               <span>Batal</span></a>
                         </div>
                       </div>

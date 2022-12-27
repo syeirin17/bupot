@@ -313,7 +313,8 @@
                       <div class="col">
                         <label for="">Kode Objek Pajak</label>
                       </div>
-                      <td style="border: 1px solid light; padding-left:50px;"><select id="kode_objek_pajak"  style="width:44%; height: 28px; margin-right:20%; border: 1px solid light" name="kode_objek_pajak">
+                      <td style="border: 1px solid light; padding-left:50px;">
+                      <select id="kode_objek_pajak"  style="width:44%; height: 28px; margin-right:20%; border: 1px solid light" name="kode_objek_pajak">
                           <option>Pilih Objek Pajak</option>
                         <option data-percent="0.2">27-100-01 - Sewa dan Penghasilan Lain Sehubungan dengan Penggunaan Harta (PPh Pasal 26) </option>
                         <option data-percent="0.2">27-100-02 - Hadiah dan Penghargaan (PPh Pasal 26) </option>
@@ -330,7 +331,8 @@
                         <option data-percent="0.2">27-107-01 - Bunga pinjaman yang dibayarkan oleh penerima pinjaman melalui Penyelenggara Layanan Pinjam Meminjam yang diterima atau diperoleh pemberi pinjaman (Fintech)</option>
                         <option data-percent="0.25">28-405-02 - Hadiah Undian (yang diterima Wajib Pajak luar negeri) </option>
                         <option data-percent="0.075">28-499-02 - Penghasilan yang Diterima atau Diperoleh Sehubungan dengan Kerja Sama dengan Lembaga Pengelola Investasi (LPI)</option>
-                      </select></td>  
+                      </select>
+                    </td>  
                     </div>
                   </div>
                   <div class="row" style="margin-left:1%;">

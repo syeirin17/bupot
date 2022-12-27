@@ -116,7 +116,7 @@
     .tab_content_box h2 {
       margin: 0 0 20px;
     }
-    
+
 
     .text {
       font-size: 12px;
@@ -131,8 +131,8 @@
     }
 
     .button1 {
-      background-color: white; 
-      color: rgb(255, 157, 49); 
+      background-color: white;
+      color: rgb(255, 157, 49);
       border: 1px solid rgb(255, 157, 49);
       border-radius: 5px;
     }
@@ -143,16 +143,17 @@
     }
 
     .button2 {
-      background-color: white;  
-      color: grey; 
+      background-color: white;
+      color: grey;
       border: 2px solid lightgray;
-      border-radius: 5px; 
+      border-radius: 5px;
     }
 
     .button2:hover {
       background-color: grey;
       color: white;
     }
+
     header {
       background-color: rgba(0, 0, 0, 0.7);
     }
@@ -172,29 +173,30 @@
       font-family: Arial;
       text-align: center;
     }
+
     .media-social {
-            font-size: 18px;
-            display: inline-block;
-            background: #ffb727;
-            color: #fff;
-            line-height: 1;
-            padding: 8px 0;
-            margin-right: 4px;
-            border-radius: 50%;
-            text-align: center;
-            width: 36px;
-            height: 36px;
-        }
+      font-size: 18px;
+      display: inline-block;
+      background: #ffb727;
+      color: #fff;
+      line-height: 1;
+      padding: 8px 0;
+      margin-right: 4px;
+      border-radius: 50%;
+      text-align: center;
+      width: 36px;
+      height: 36px;
+    }
 
-        .media-social i {
-            color: #FFF;
-        }
+    .media-social i {
+      color: #FFF;
+    }
 
-        .copyright {
-            font-size: 12px;
-            color: #FFF;
-            padding-top: 30px;
-        }
+    .copyright {
+      font-size: 12px;
+      color: #FFF;
+      padding-top: 30px;
+    }
   </style>
 </head>
 
@@ -215,24 +217,25 @@
       </div>
     </div>
   </header>
-    <div class='content' style="padding-top :20px; padding-left:350px; padding-right:250px">
-      <div class="" style="background-color: white ; padding: 10px 20px 0px 20px; width: 860px">
-        <div style="background-color: #FFFFFF">
-          <div class="tab-content" id="nav-tabContent" style="margin-top: 10px;">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+  <div class='content' style="padding-top :20px; padding-left:350px; padding-right:250px">
+    <div class="" style="background-color: white ; padding: 10px 20px 0px 20px; width: 860px">
+      <div style="background-color: #FFFFFF">
+        <div class="tab-content" id="nav-tabContent" style="margin-top: 10px;">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
             <div class="table" style="background-color: rgb(4, 153, 195); height: 40px; padding: 10px 0px 0px 10px; ">
-                <span style="color: #FFFFFF; font-weight: bold;">
-                  <img style="width: 20px; margin:0px 0px 5px 0px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAC7ElEQVRoge2aO2tUQRiGny8kaqExkRittFew0agYrJYkqAFBVNKk8C/o31Dsogg2ghcQLEIUvIGFIRo3pLFPUsYL8Va4aV6Lc45M1nOZk8zZBdkHFia733zzvme+mXMLdGgv1m4BeUg6CZyK/5w1s/ft1OONpD5JT/UvM5J2t1tfLpL6JdVTxP810W6NmXiITziR9OkuSgjUgANATwCNv4F7ZraW8fs4cNQjzzCQvR4kDUq6I2nd42iU5UGeMknXPHJczUtwWNJKBcIT7jeN1y9ptKSJ40lsd1PHQeAZUckkvAPmgPW8I+fJZ+CuKx54CRyRNGFmTwDM7IYkgOspOWbMbD41u6KySViTdCaA6KyxmhfsuqQLTTHNM1GX1JeX0K35Vor3MVGPZywz6UUn0VwbxOeZmMwVHwe505VWe60Qn2kiiy6nvctp/worfcOC9dnne4BHksaKAruKAkIQL7zn+IlP+AjUi4IqNxCLfwEMlei2CIyY2deiwEoNVC0eKjTQCvFQkYF4wb6inPgFoJaIj3esh/En/eRFwdXoZii52yQsEB159yr1CjARt+eBm2kdg86ApG1EZbNV8QC9TjvzLix0CV0GjpWIzxLvTRUGfFkExrYiHgIakNQLjHiGl95tsgg5A+eBHR5xwcRDWAOXPGKCiodABuLyGS0Iq+Ps86EINQM1YHvK9w1gGpgEhre6YNMIdSL75LQbRFeej4FpM/sRaIxUghgws1lJp4E9wJuqRbsEu5Qws7ehcpWhJTc0VdIx0G46BtrNf2Xgp9Pe2WohKbg3NJnnFdfAstMeDi6nPK6GpcJoRS/W3Ie7Z6vTVqhl3NHRkO+LPUm3nY7fJJ2rWGuahvF47ISpvPgN74kl7QU+AAedr+eBWWA1uNqN7CcqG/dRzDIwZGZfvLMoesW07PEEuWqWJB3a1KGQNCDplqL6azUNSVOSBny05v6rgaLFUyMqqX2bOhr+rAIrwGsz+17xWB2C8Qcjc2gawHJhagAAAABJRU5ErkJggg==">                 
-                  Perekaman Bukti Setor Non Residen
-                </span>
-              </div> 
+              <span style="color: #FFFFFF; font-weight: bold;">
+                <img style="width: 20px; margin:0px 0px 5px 0px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAC7ElEQVRoge2aO2tUQRiGny8kaqExkRittFew0agYrJYkqAFBVNKk8C/o31Dsogg2ghcQLEIUvIGFIRo3pLFPUsYL8Va4aV6Lc45M1nOZk8zZBdkHFia733zzvme+mXMLdGgv1m4BeUg6CZyK/5w1s/ft1OONpD5JT/UvM5J2t1tfLpL6JdVTxP810W6NmXiITziR9OkuSgjUgANATwCNv4F7ZraW8fs4cNQjzzCQvR4kDUq6I2nd42iU5UGeMknXPHJczUtwWNJKBcIT7jeN1y9ptKSJ40lsd1PHQeAZUckkvAPmgPW8I+fJZ+CuKx54CRyRNGFmTwDM7IYkgOspOWbMbD41u6KySViTdCaA6KyxmhfsuqQLTTHNM1GX1JeX0K35Vor3MVGPZywz6UUn0VwbxOeZmMwVHwe505VWe60Qn2kiiy6nvctp/worfcOC9dnne4BHksaKAruKAkIQL7zn+IlP+AjUi4IqNxCLfwEMlei2CIyY2deiwEoNVC0eKjTQCvFQkYF4wb6inPgFoJaIj3esh/En/eRFwdXoZii52yQsEB159yr1CjARt+eBm2kdg86ApG1EZbNV8QC9TjvzLix0CV0GjpWIzxLvTRUGfFkExrYiHgIakNQLjHiGl95tsgg5A+eBHR5xwcRDWAOXPGKCiodABuLyGS0Iq+Ps86EINQM1YHvK9w1gGpgEhre6YNMIdSL75LQbRFeej4FpM/sRaIxUghgws1lJp4E9wJuqRbsEu5Qws7ehcpWhJTc0VdIx0G46BtrNf2Xgp9Pe2WohKbg3NJnnFdfAstMeDi6nPK6GpcJoRS/W3Ie7Z6vTVqhl3NHRkO+LPUm3nY7fJJ2rWGuahvF47ISpvPgN74kl7QU+AAedr+eBWWA1uNqN7CcqG/dRzDIwZGZfvLMoesW07PEEuWqWJB3a1KGQNCDplqL6azUNSVOSBny05v6rgaLFUyMqqX2bOhr+rAIrwGsz+17xWB2C8Qcjc2gawHJhagAAAABJRU5ErkJggg==">
+                Perekaman Bukti Setor Non Residen
+              </span>
+            </div>
             <div class="accordion" id="accordion">
-                <div class="accordion-item"></div>
-                  <h6 class="accordion-header" id="headingOne">
-                    <button class="accordion-button btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Identitas Wajib Pajak Yang Dipotong/Dipungut
-                    </button>
-                  </h6>
+              <div class="accordion-item">
+                <h6 class="accordion-header" id="headingOne">
+                  <button id="identitaswpdipotong" class="accordion-button btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Identitas Wajib Pajak Yang Dipotong/Dipungut
+                  </button>
+                </h6>
+                <div id="form1">
                   <div style="padding:4px;" id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
                     <form class="row g-3">
                       <div class="col-md-3">
@@ -240,6 +243,7 @@
                         <select class="form-select" id="tahunpajak" name="tahunpajak" required>
                           <option selected disabled value="">Pilih Tahun Pajak</option>
                           <option>2022</option>
+                          <option>2023</option>
                         </select>
                       </div>
                       <div class="col-md-3">
@@ -296,135 +300,138 @@
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                           <button class="button button1" type="button" onclick="openpphdipotong()">Selanjutnya</button>
                         </div>
-              </div>
-              </form>
+                      </div>
+                    </form>
                   </div>
                 </div>
-                <div style="padding:5px;"></div>
-              <div class="accordion-item">
-                <h6 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button btn-warning" id="ppygdipotong" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Pajak Penghasilan Yang Dipotong/Dipungut
-                  </button>
-                </h6>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
-                  <div class="accordion-body">
-                    <div class="row" style="margin-bottom: 5px;">
-                      <div class="col">
-                        <label for="">Kode Objek Pajak</label>
-                      </div>
-                      <td style="border: 1px solid light; padding-left:50px;"><select id="kode_objek_pajak"  style="width:44%; height: 28px; margin-right:20%; border: 1px solid light" name="kode_objek_pajak">
-                          <option>Pilih Objek Pajak</option>
-                        <option data-percent="0.2">27-100-01 - Sewa dan Penghasilan Lain Sehubungan dengan Penggunaan Harta (PPh Pasal 26) </option>
-                        <option data-percent="0.2">27-100-02 - Hadiah dan Penghargaan (PPh Pasal 26) </option>
-                        <option data-percent="0.2">27-100-03 - Pensiun dan Pembayaran Berkala Lainnya</option>
-                        <option data-percent="0.2">27-100-04 - Keuntungan Karena Pembebasan Utang (PPh Pasal 26)</option>
-                        <option data-percent="0.2">27-100-05 - Penghasilan Dari Penjualan atau Pengalihan Harta di Indonesia (PPh Pasal 26)</option>
-                        <option data-percent="0.2 ">27-100-06 - Premi Asuransi/Reasuransi (PPh Pasal 26)</option>
-                        <option data-percent="0.2">27-101-01 - Dividen (PPh Pasal 26) </option>
-                        <option data-percent="0.2">27-102-01  - Bunga Selain Bunga Obligasi (PPh Pasal 26) </option>
-                        <option data-percent="0.2">27-102-02 - Premi Swap dan Transaksi Lindung Nilai Lainnya (PPh Pasal 26)</option>
-                        <option data-percent="0.2">27-103-01 - Royalti (PPh Pasal 26)</option>
-                        <option data-percent="0.2">27-104-01 - Imbalan Sehubungan dengan Jasa, Pekerjaan dan Kegiatan (PPh Pasal 26)</option>
-                        <option data-percent="0.2">27-105-01 - Penghasilan Kena Pajak BUT Setelah Pajak (PPh Pasal 26)</option>
-                        <option data-percent="0.2">27-107-01 - Bunga pinjaman yang dibayarkan oleh penerima pinjaman melalui Penyelenggara Layanan Pinjam Meminjam yang diterima atau diperoleh pemberi pinjaman (Fintech)</option>
-                        <option data-percent="0.25">28-405-02 - Hadiah Undian (yang diterima Wajib Pajak luar negeri) </option>
-                        <option data-percent="0.075">28-499-02 - Penghasilan yang Diterima atau Diperoleh Sehubungan dengan Kerja Sama dengan Lembaga Pengelola Investasi (LPI)</option>
-                      </select></td>  
-                    </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h6 class="accordion-header" id="headingTwo">
+              <button id="ppygdipotong" class="accordion-button btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" disabled="disabled">
+                Pajak Penghasilan Yang Dipotong/Dipungut
+              </button>
+            </h6>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+              <div class="accordion-body">
+                <div class="row" style="margin-bottom: 5px;">
+                  <div class="col">
+                    <label for="">Kode Objek Pajak</label>
                   </div>
-                  <div class="row" style="margin-left:1%;">
-                    <div class="col-5">Fasilitas Pajak Penghasilan</div>
-                    <div class="col-3" style="margin-right: 300px;">
+                  <td style="border: 1px solid light; padding-left:50px;">
+                    <select id="kode_objek_pajak" style="width:44%; height: 28px; margin-right:20%; border: 1px solid light" name="kode_objek_pajak">
+                      <option>Pilih Objek Pajak</option>
+                      <option data-percent="0.2">27-100-01 - Sewa dan Penghasilan Lain Sehubungan dengan Penggunaan Harta (PPh Pasal 26) </option>
+                      <option data-percent="0.2">27-100-02 - Hadiah dan Penghargaan (PPh Pasal 26) </option>
+                      <option data-percent="0.2">27-100-03 - Pensiun dan Pembayaran Berkala Lainnya</option>
+                      <option data-percent="0.2">27-100-04 - Keuntungan Karena Pembebasan Utang (PPh Pasal 26)</option>
+                      <option data-percent="0.2">27-100-05 - Penghasilan Dari Penjualan atau Pengalihan Harta di Indonesia (PPh Pasal 26)</option>
+                      <option data-percent="0.2 ">27-100-06 - Premi Asuransi/Reasuransi (PPh Pasal 26)</option>
+                      <option data-percent="0.2">27-101-01 - Dividen (PPh Pasal 26) </option>
+                      <option data-percent="0.2">27-102-01 - Bunga Selain Bunga Obligasi (PPh Pasal 26) </option>
+                      <option data-percent="0.2">27-102-02 - Premi Swap dan Transaksi Lindung Nilai Lainnya (PPh Pasal 26)</option>
+                      <option data-percent="0.2">27-103-01 - Royalti (PPh Pasal 26)</option>
+                      <option data-percent="0.2">27-104-01 - Imbalan Sehubungan dengan Jasa, Pekerjaan dan Kegiatan (PPh Pasal 26)</option>
+                      <option data-percent="0.2">27-105-01 - Penghasilan Kena Pajak BUT Setelah Pajak (PPh Pasal 26)</option>
+                      <option data-percent="0.2">27-107-01 - Bunga pinjaman yang dibayarkan oleh penerima pinjaman melalui Penyelenggara Layanan Pinjam Meminjam yang diterima atau diperoleh pemberi pinjaman (Fintech)</option>
+                      <option data-percent="0.25">28-405-02 - Hadiah Undian (yang diterima Wajib Pajak luar negeri) </option>
+                      <option data-percent="0.075">28-499-02 - Penghasilan yang Diterima atau Diperoleh Sehubungan dengan Kerja Sama dengan Lembaga Pengelola Investasi (LPI)</option>
+                    </select>
+                  </td>
+                </div>
+              </div>
+              <div class="row" style="margin-left:1%;">
+                <div class="col-5">Fasilitas Pajak Penghasilan</div>
+                <div class="col-3" style="margin-right: 300px;">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="fasilitas_pajak_penghasilan" id="tanpafasilitas" value="tanpa fasilitas" onclick="handlerRadioSelect1()">
+                    <label class="form-check-label" for="gridRadios1">
+                      Tanpa Fasilitas
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="fasilitas_pajak_penghasilan" id="tanpafasilitas" value="tanpa fasilitas" onclick="handlerRadioSelect1()">
-                        <label class="form-check-label" for="gridRadios1">
-                          Tanpa Fasilitas
-                        </label>
-                      </div>
-                    </div>
-                      <div class="row">
-                      <div class="col-6">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="fasilitas_pajak_penghasilan" id="pilihskdwpln" value="skd wpln" onclick="handlerRadioSelect2()">
-                        <label class="form-check-label" for="gridRadios2">
-                          SKD WPLN
-                        </label>
-                      </div>
-                      </div>
-                      <div class="col-6">
-                      <input class="form-control" style="height:25px; width:75%;"type="text" id="skdwpln" placeholder="Nomor Tanda Terima SKD WPLN" aria-label="default input" disabled>
-                      </div>
-                      </div>
-                      <div class="row">
-                      <div class="col-6">
-                        <input class="form-check-input" type="radio" name="fasilitas_pajak_penghasilan" id="pilihdtp" value="pph ditanggung pemerintah" onclick="handlerRadioSelect3()">
-                        <label class="form-check-label" for="gridRadios3">
-                          PPh Ditanggung Pemerintah(DTP)
-                        </label>
-                      </div>
-                      <div class="col-6">
-                      <input class="form-control" style="height:25px; width:75%;"type="text" id="dtp" placeholder="Nomor Aturan DT" aria-label="default input" disabled>
-                      </div>
-                      </div>
-                      <div class="row">
-                      <div class="col-6">
-                      <input class="form-check-input" type="radio" name="fasilitas_pajak_penghasilan" id="pilihlainnya" value="fasilitas lainnya berdasarkan" onclick="handlerRadioSelect4()">
-                      <label class="form-check-label" for="gridRadios4">
-                        Fasilitas lainnya berdasarkan
+                      <input class="form-check-input" type="radio" name="fasilitas_pajak_penghasilan" id="pilihskdwpln" value="skd wpln" onclick="handlerRadioSelect2()">
+                      <label class="form-check-label" for="gridRadios2">
+                        SKD WPLN
                       </label>
                     </div>
-                    <div class="col-6">
-                      <input class="form-control" style="height:25px; width:75%;"type="text" id="lainnya" placeholder="Nomor Dokumen Fasilitas Lainnya" aria-label="default input" disabled>
-                      </div>
-                      </div>
+                  </div>
+                  <div class="col-6">
+                    <input class="form-control" style="height:25px; width:75%;" type="text" id="skdwpln" placeholder="Nomor Tanda Terima SKD WPLN" aria-label="default input" disabled>
+                  </div>
                 </div>
-                <div style="padding: 8px;"></div>
-                  <div class="row">
-                  <div class="col-6" style="padding-left:4%;">
-                      <label for="">Jumlah Penghasilan Bruto(RP)</label>
-                    </div>
+                <div class="row">
                   <div class="col-6">
-                      <input class="form-control" oninput="generateDipotong()" style="height:30px;width:71%;" id="jumlah_penghasilan_bruto" name="jumlah_penghasilan_bruto" type="text" placeholder="" aria-label="default input">
-                    </div>
-                  </div><div style="padding: 3px;"></div>
-                  <div class="row">
-                  <div class="col-6" style="padding-left:4%;">
-                      <label for="">Perkiraan Penghasilan Netto</label>
+                    <input class="form-check-input" type="radio" name="fasilitas_pajak_penghasilan" id="pilihdtp" value="pph ditanggung pemerintah" onclick="handlerRadioSelect3()">
+                    <label class="form-check-label" for="gridRadios3">
+                      PPh Ditanggung Pemerintah(DTP)
+                    </label>
                   </div>
                   <div class="col-6">
-                    <input class="form-control"style="height:30px;width:71%;" id="netto" name="netto" type="text" placeholder="" aria-label="default input" disabled>
+                    <input class="form-control" style="height:25px; width:75%;" type="text" id="dtp" placeholder="Nomor Aturan DT" aria-label="default input" disabled>
                   </div>
-                  <div style="padding: 3px;"></div>
-                  <div class="row">
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <input class="form-check-input" type="radio" name="fasilitas_pajak_penghasilan" id="pilihlainnya" value="fasilitas lainnya berdasarkan" onclick="handlerRadioSelect4()">
+                    <label class="form-check-label" for="gridRadios4">
+                      Fasilitas lainnya berdasarkan
+                    </label>
+                  </div>
+                  <div class="col-6">
+                    <input class="form-control" style="height:25px; width:75%;" type="text" id="lainnya" placeholder="Nomor Dokumen Fasilitas Lainnya" aria-label="default input" disabled>
+                  </div>
+                </div>
+              </div>
+              <div style="padding: 8px;"></div>
+              <div class="row">
+                <div class="col-6" style="padding-left:4%;">
+                  <label for="">Jumlah Penghasilan Bruto(RP)</label>
+                </div>
+                <div class="col-6">
+                  <input class="form-control" oninput="generateDipotong(this.value)" id="jumlah_penghasilan_bruto" name="jumlah_penghasilan_bruto" style="height:30px;width:71%;" type="text" placeholder="" aria-label="default input">
+                </div>
+              </div>
+              <div style="padding: 3px;"></div>
+              <div class="row">
+                <div class="col-6" style="padding-left:4%;">
+                  <label for="">Perkiraan Penghasilan Netto</label>
+                </div>
+                <div class="col-6">
+                  <input class="form-control" style="height:30px; width:71%;" id="netto" name="netto" type="text" placeholder="" aria-label="default input" disabled>
+                </div>
+                <div style="padding: 3px;"></div>
+                <div class="row">
                   <div class="col-6" style="padding-left:4%;">
                     <label for="">Tarif</label>
                   </div>
                   <div class="col-6" style="padding-left:3%">
-                    <input class="form-control"style="height:30px; width:75%;" id="tarif" name="tarif" type="text" placeholder="" aria-label="default input" disabled>
+                    <input class="form-control" style="height:30px; width:75%;" id="tarif" name="tarif" style="height:30px;width:71%;" type="text" placeholder="" aria-label="default input" disabled>
                   </div>
-                  </div>
-                  <div style="padding: 3px;"></div>
-                  <div class="row">
-                  <div class="col-6" style="padding-left:4%;">
-                      <label for="">PPh yang Dipotong/Dipungut</label>
-                    </div>
-                    <div class="col-6" style="padding-left:3%">
-                      <input class="form-control"style="height:30px;width:75%;" id="jumlah_setor" name="jumlah_setor" type="text" placeholder="" aria-label="default input" disabled>
-                    </div>
-                  </div>
-              <div style="padding:10px;"></div>
                 </div>
+                <div style="padding: 3px;"></div>
+                <div class="row">
+                  <div class="col-6" style="padding-left:4%;">
+                    <label for="">PPh yang Dipotong/Dipungut</label>
+                  </div>
+                  <div class="col-6" style="padding-left:3%">
+                    <input class="form-control" style="height:30px; width:75%;"id="jumlah_setor" name="jumlah_setor" style="height:30px;width:71%;" type="text" placeholder="" aria-label="default input" disabled>
+                  </div>
+                </div>
+                <div style="padding:10px;"></div>
               </div>
-          </div>
             </div>
             <div class="accordion-item">
               <h6 class="accordion-header" id="headingThree">
-                <button class="accordion-button btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <button id="dokdas" class="accordion-button btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" disabled="disabled">
                   Dokumen Dasar Pemotongan
                 </button>
               </h6>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
                 <div class="accordion-body">
                   <div>
                     <div class="table" style="background-color: rgb(4, 153, 195); height: 50px; padding: 10px 0px 0px 10px; ">
@@ -438,18 +445,22 @@
                         <div class="modal-dialog" style="background-color:lavender;">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Dasar Pemotongan</h5>
+                              <h5 class="modal-title" id="exampleModalLabel">
+                                Dasar
+                                Pemotongan</h5>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                               <form>
                                 <div class="row">
                                   <div class="col-4">
-                                    <label for="">Nama Dokumen</label>
+                                    <label for="">Nama
+                                      Dokumen</label>
                                   </div>
                                   <div class="col-8">
                                     <select class="form-select" id="nama_dokumen" name="nama_dokumen" style="height: 30px; font-size:13px; width:205px" required>
-                                      <option selected disabled value="">Pilih Dokumen</option>
+                                      <option selected disabled value="">Pilih Dokumen
+                                      </option>
                                       <option>Faktur Pajak</option>
                                       <option>Invoice</option>
                                       <option>Pengumuman</option>
@@ -465,7 +476,8 @@
                                 <div style="padding:3px;"></div>
                                 <div class="row">
                                   <div class="col-4">
-                                    <label for="">No Dokumen</label>
+                                    <label for="">No
+                                      Dokumen</label>
                                   </div>
                                   <div class="col-8">
                                     <input class="form-control" id="no_dokumen" name="no_dokumen" style="height:30px;width:71%;" type="text" placeholder="" aria-label="default input">
@@ -477,49 +489,52 @@
                                     <label for="">Tanggal</label>
                                   </div>
                                   <div class="col-8">
-                                    <input class="form-control" id="tgl_dokumen" name="tgl_dokumen" style="height:30px;width:71%;" type="text" placeholder="" aria-label="default input" value="{{ date('d-m-Y',time()) }}" readonly>
+                                    <input class="form-control" id="tgl_dokumen" name="tgl_dokumen" style="height:30px;width:71%;" type="text" placeholder="" aria-label="default input" value="{{ date('d-m-Y', time()) }}" readonly>
                                   </div>
                                 </div>
-                                <script>  
+                                <script>
                                   // A $( document ).ready() block.
-                                  $( document ).ready(function() {
-                                      console.log( "ready!" );
+                                  $(document).ready(function() {
+                                    console.log("ready!");
                                   });
+
                                   function tambahrow() {
-                                    var rowCount = $('#bupotnon tr').length;
-                                    var tbody = document.getElementById('bupotnon');
+                                    var rowCount = $('#bupotpasal tr').length;
+                                    var tbody = document.getElementById('bupotpasal');
                                     var nama_dokumen = document.getElementById('nama_dokumen').value;
                                     var no_dokumen = document.getElementById('no_dokumen').value;
                                     var tgl_dokumen = document.getElementById('tgl_dokumen').value;
-                                
+
                                     var tr = document.createElement('tr');
                                     var td1 = document.createElement('td');
                                     var td2 = document.createElement('td');
                                     var td3 = document.createElement('td');
                                     var td4 = document.createElement('td');
-                                    if(rowCount === 0){
+                                    if (rowCount === 0) {
                                       td1.innerHTML = `<span id='nama_dokumen2' data-value='${nama_dokumen}' > ${nama_dokumen} </span>`;
-                                    td2.innerHTML = `<span id='no_dokumen2' data-value='${no_dokumen}' > ${no_dokumen} </span>`;
-                                    td3.innerHTML = `<span id='tgl_dokumen2' data-value='${tgl_dokumen}' > ${tgl_dokumen} </span>`;
-                                    td4.innerHTML = '<img onclick="deleteTable()" style="padding-left:25%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAB4klEQVQ4jaWTMW/TUBSFv/uSNhSmlyZSmWCADWaYYGcH/gGZkBiQUAcqq1M3BAxI/BpWNkQFEwN0aFNBY0fQJoXYh+HZIW7sBMGVLD3f+873zr3PNpaEHl5pceHreQCOuyf28tPpov1uIexp53bmkyRbXRlkqyuDzCeJou6tfwJqc6ObObsH7CF6iB6wl4n72tzo1umsWKRbncjEDRmXgMvA2iInwAj4bOKLjLeN7W8RQHPqCLcL2T5agjnbSdAezTkMLru7oKvASZ4a504KR+MccuzETwCZPjS2jx4VjOYMD5P6Mq4BrUWuDJAVmpKn8qXIOMiXzzBez1Seh2carzC9yDWHs4ySQ6APIPERGBk8CO/uHYBZGLBkbwyt55r9WocoAM3wOIsrus07SWPk/KymEiiKovkG6aAO2JQb4OTLmirgdIZqM3G1Dmk0YoQvayqAzUzhNMOTNmsdMh7HJvMlTRWQySTMUOZp9ePQ0VxknBsOM9QOLtJ6h7YzjIGRUNsiJsCPCuDQIjIzPDC2KEnqHQKgQwjzAarmWOQ8lNuF+e8Q4fqGrqdb60/I/xhnuhNqAKzltY5w75cCHRwIboLt/DmEuzNbLhY1R/mGK4H2q9Gzlh6fzVfGqX3/q33/E78BLt6/81PFEEoAAAAASUVORK5CYII=">';
-                                    tr.appendChild(td1);
-                                    tr.appendChild(td2);
-                                    tr.appendChild(td3);
-                                    tr.appendChild(td4);
-                                    tbody.appendChild(tr);
-                                    alert('berhasil')
-                                    return;
+                                      td2.innerHTML = `<span id='no_dokumen2' data-value='${no_dokumen}' > ${no_dokumen} </span>`;
+                                      td3.innerHTML = `<span id='tgl_dokumen2' data-value='${tgl_dokumen}' > ${tgl_dokumen} </span>`;
+                                      td4.innerHTML =
+                                        '<img onclick="deleteTable()" style="padding-left:25%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAB4klEQVQ4jaWTMW/TUBSFv/uSNhSmlyZSmWCADWaYYGcH/gGZkBiQUAcqq1M3BAxI/BpWNkQFEwN0aFNBY0fQJoXYh+HZIW7sBMGVLD3f+873zr3PNpaEHl5pceHreQCOuyf28tPpov1uIexp53bmkyRbXRlkqyuDzCeJou6tfwJqc6ObObsH7CF6iB6wl4n72tzo1umsWKRbncjEDRmXgMvA2iInwAj4bOKLjLeN7W8RQHPqCLcL2T5agjnbSdAezTkMLru7oKvASZ4a504KR+MccuzETwCZPjS2jx4VjOYMD5P6Mq4BrUWuDJAVmpKn8qXIOMiXzzBez1Seh2carzC9yDWHs4ySQ6APIPERGBk8CO/uHYBZGLBkbwyt55r9WocoAM3wOIsrus07SWPk/KymEiiKovkG6aAO2JQb4OTLmirgdIZqM3G1Dmk0YoQvayqAzUzhNMOTNmsdMh7HJvMlTRWQySTMUOZp9ePQ0VxknBsOM9QOLtJ6h7YzjIGRUNsiJsCPCuDQIjIzPDC2KEnqHQKgQwjzAarmWOQ8lNuF+e8Q4fqGrqdb60/I/xhnuhNqAKzltY5w75cCHRwIboLt/DmEuzNbLhY1R/mGK4H2q9Gzlh6fzVfGqX3/q33/E78BLt6/81PFEEoAAAAASUVORK5CYII=">';
+                                      tr.appendChild(td1);
+                                      tr.appendChild(td2);
+                                      tr.appendChild(td3);
+                                      tr.appendChild(td4);
+                                      tbody.appendChild(tr);
+                                      countdokumen += 1;
+                                      openidentitaspemotong();
+                                      alert('berhasil')
+                                      return;
                                     }
-                                    alert($('#nama_dokumen2').attr('data-value'))
-  
+                                    // alert($('#nama_dokumen2').attr('data-value'))
                                   }
-            
+
                                   function deleteTable() {
-  
-                                    var rowCount = $('#bupotnon tr').length;
+
+                                    var rowCount = $('#bupotpasal tr').length;
                                     alert(rowCount);
                                     if (rowCount > 0) {
-                                      $('#bupotnon tr:last').remove();
+                                      $('#bupotpasal tr:last').remove();
                                     }
                                   }
                                 </script>
@@ -531,7 +546,7 @@
                           </div>
                         </div>
                       </div>
-                    </div> 
+                    </div>
                     <form>
                       <div class="form-row align-items-center">
                         <div class="col-auto my-1">
@@ -559,110 +574,122 @@
                                 <th class="text" style="color: #FFFFFF;" scope="col">AKSI</th>
                               </tr>
                             </thead>
-                            <tbody id="bupotnon">
-                              
+                            <tbody id="bupotpasal">
+
                             </tbody>
                           </table>
                         </div>
-                      </div>         
-              </div>
-                </div>
-              </div>
-                  <div class="accordion-item">
-                  <h6 class="accordion-header" id="headingFour">
-                    <button class="accordion-button btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      Identitas Pemotong Pajak
-                    </button>
-                  </h6>
-                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
-                    <div class="accordion-body">
-                      <div class="col-md-4">
-                        <label for="validationDefault04" class="form-label">Penandatangan Sebagai</label>
-                        <select name="pilihsebagai" class="form-select" required>
-                          <option>pengurus</option>
-                          <option>kuasa</option>
-                        </select>
-                </div>
-                <div class="col-md-4">
-                  <label for="validationDefault04" class="form-label">Penandatangan Bukti Potong</label>
-                  <select name="pilihbupot" class="form-select" required>
-                    <option selected disabled value="">Pilih Penandatangan</option>
-                    <option>...</option>
-                  </select>
-                </div>
-                <div style="padding:10px;">
-                <div class="alert alert-warning" role="alert">
-                <h4 class="alert">Warning!</h4>
-                <p>Apabila terjadi kesalahan dalam pembuatan Bukti Pemotongan/ Pemungutan Unifikasi yang menyebabkan kelebihan pemotongan/pemungutan PPh, maka pihak yang akan diajukan:</p>
-                <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                  Pengembalian atas pajak yang tidak seharusnya terutang oleh Pemotong dan/ atau Pemungut PPh
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2">
-                  Pemindahbukuan oleh Pemotong dan/ atau Pemungut PPh
-                </label>
-              </div>
-              <div style="padding:25px;"></div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                  Dengan ini saya menyatakan bahwa Bukti Pemotongan/Pemungutan Unifikasi yang telah saya isi dengan benar dan telah saya tandatangani secara electronik  
-                </label>
-              </div>
-              </div>
-                </div>
-                          <div class="col">
-                        <div class="d-grid gap-5 d-md-flex justify-content-md">
-                        <button class="button button2" type="button">
-                        <span>Sebelumnya</span></button>
-                              </div>
-                          </div>
-                </div>    
-                        <div class="row" style="padding-left: 57%; padding-right:55%;">
-                        <div class="col">
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button class="button button1" type="button">
-                        <span>Simpan</span></a>
-                      <button class="button button2" type="button">
-                      <span>Batal</span></a>
                       </div>
-                      <div style="padding:10px;"></div>
                   </div>
-                </div>   
-              </div>
-              </div>
-              </div>
-              </div>
-              </div>
-              </div>
-              <div style="padding:15px;"></div>
-                  </div> 
                 </div>
+              </div>
+
+            </div>
+            <div class="accordion-item">
+              <h6 class="accordion-header" id="headingFour">
+                <button id="identitaspemotong" class="accordion-button btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" disabled="disabled">
+                  Identitas Pemotong Pajak
+                </button>
+              </h6>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
+                <div class="accordion-body">
+                  <div class="col-md-4">
+                    <label for="validationDefault04" class="form-label">Penandatangan
+                      Sebagai</label>
+                    <select name="pilihsebagai" class="form-select" required>
+                      {{-- <option value="{{ $pengaturan['bertindak_sebagai'] }}">{{ $pengaturan['bertindak_sebagai'] }}</option> --}}
+
+                    </select>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationDefault04" class="form-label">Penandatangan
+                      Bukti Potong</label>
+                    <select name="pilihbupot" class="form-select" id="pengaturan_id" required>
+                      <option selected disabled value="">Pilih Penandatangan
+                      </option>
+                      {{-- <option value="{{ $pengaturan['user']['id'] }}">{{ $pengaturan['user']['name'] }}</option> --}}
+                    </select>
+                  </div>
+                  <div style="padding:10px;">
+                    <div class="alert alert-warning" role="alert">
+                      <h4 class="alert">Warning!</h4>
+                      <p>Apabila terjadi kesalahan dalam pembuatan Bukti Pemotongan/
+                        Pemungutan Unifikasi yang menyebabkan kelebihan
+                        pemotongan/pemungutan PPh, maka pihak yang akan diajukan:</p>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Pengembalian atas pajak yang tidak seharusnya terutang oleh
+                          Pemotong dan/ atau Pemungut PPh
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Pemindahbukuan oleh Pemotong dan/ atau Pemungut PPh
+                        </label>
+                      </div>
+                      <div style="padding:25px;"></div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Dengan ini saya menyatakan bahwa Bukti Pemotongan/Pemungutan
+                          Unifikasi yang telah saya isi dengan benar dan telah saya
+                          tandatangani secara electronik
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="d-grid gap-5 d-md-flex justify-content-md">
+                      <button class="button button2" type="button">
+                        <span>Sebelumnya</span></button>
+                    </div>
+                  </div>
                 </div>
 
+                <div class="row" style="padding-left: 57%; padding-right:55%;">
+                  <div class="col">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                      <a href="{{ url('/daftarbuktipotongBPPs') }}" onclick="addTableHarta(this)" class="button button1" type="button">
+                        <span>Simpan</span></a>
+                        <a class="button button2" type="button">
+                          <span>Batal</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div style="padding:10px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="padding:15px;"></div>
+    </div>
+  </div>
+  </div>
 
 
 
 
 
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-      </script>
-      <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
 </body>
 <script>
-  $(document).ready(function(){
+  $(document).ready(function() {
     tablebupot();
   })
+
   function tablebupot() {
     var div_table = document.getElementById('nonresiden');
     div_table.innerHTML = 'suratbupot';
   }
+
   function handleChange(src) {
     const myElement = document.getElementById("eformspt");
     myElement.style.display = "block";
@@ -682,28 +709,36 @@
   }
 
 
-  let percent ;
+  let percent;
+  let countdokumen = 0;
+
   function formatPercent(number) {
     return `${(numeral(number).format()).replace(",",".")}`;
-}
+  }
   var selection = document.getElementById("kode_objek_pajak");
   const myElement = document.getElementById("jumlah_penghasilan_bruto");
   const myElement2 = document.getElementById("jumlah_setor");
-selection.onchange = function(event){
-  var rc = event.target.options[event.target.selectedIndex].dataset.percent;
-  const tarif = document.getElementById("tarif");
-  console.log(tarif)
-  tarif.value = parseFloat(rc)
-  
-    percent = parseFloat(rc) ;
-};
+  selection.onchange = function(event) {
+    var rc = event.target.options[event.target.selectedIndex].dataset.percent;
+    const tarif = document.getElementById("tarif");
+    console.log(tarif)
+    tarif.value = parseFloat(rc)
 
-function generateDipotong(){
-  const jumlah_penghasilan_bruto = document.getElementById("jumlah_penghasilan_bruto");
-  const jumlah_setor = document.getElementById("jumlah_setor");
-  jumlah_setor.value = (parseInt(jumlah_penghasilan_bruto.value) * percent);
-  
-}
+    percent = parseFloat(rc);
+  };
+
+  function generateDipotong(src) {
+    const jumlah_penghasilan_bruto = document.getElementById("jumlah_penghasilan_bruto");
+    const jumlah_setor = document.getElementById("jumlah_setor");
+    jumlah_setor.value = (parseInt(jumlah_penghasilan_bruto.value) * percent);
+    let newVal = parseInt(src.split(",").join('')) * percent
+    const myElement = document.getElementById("jumlah_penghasilan_bruto");
+    const myElement2 = document.getElementById("jumlah_setor");
+    myElement.value = numeral(src).format();
+    myElement2.value = formatPercent(newVal);
+    opendokdas();
+
+  }
 
   function handleChange(src) {
     const myElement = document.getElementById("eformspt");
@@ -734,13 +769,19 @@ function generateDipotong(){
 
   function openpphdipotong() {
     console.log('click')
-    let no_identitas = document.getElementById("no_identitas")
+    let tin = document.getElementById("tin")
     let nama = document.getElementById("nama")
-    console.log(no_identitas)
-    if (!no_identitas.value || !nama.value) {
+    let alamat = document.getElementById("alamat")
+    let negara = document.getElementById("negara")
+    let tempatlahir = document.getElementById("tempatlahir")
+    let tgllahir = document.getElementById("tgllahir")
+    let nopaspor = document.getElementById("nopaspor")
+    let nokitab = document.getElementById("nokitab")
+    console.log(tin)
+    if (!tin.value || !nama.value || !alamat.value || !negara.value || !tempatlahir.value || !tgllahir.value || !nopaspor.value || !nokitab.value) {
       document.getElementById("ppygdipotong").disabled = true
     }
-    if (no_identitas.value && nama.value) {
+    if (tin.value && nama.value && alamat.value && negara.value && tempatlahir.value && tgllahir.value && nopaspor.value && nokitab.value) {
       document.getElementById("ppygdipotong").disabled = false
       document.getElementById("identitaswpdipotong").disabled = true
     }
@@ -748,13 +789,12 @@ function generateDipotong(){
   }
 
   function opendokdas() {
-    console.log('click')
     let jumlah_penghasilan_bruto = document.getElementById("jumlah_penghasilan_bruto")
     console.log(jumlah_penghasilan_bruto)
     if (!jumlah_penghasilan_bruto.value) {
       document.getElementById("dokdas").disabled = true
     }
-    if (jumlahbruto.value) {
+    if (jumlah_penghasilan_bruto.value) {
       document.getElementById("dokdas").disabled = false
       document.getElementById("ppygdipotong").disabled = true
     }
@@ -762,14 +802,12 @@ function generateDipotong(){
   }
 
   function openidentitaspemotong() {
-    console.log('click')
-    let tambah = document.getElementById("tambah")
-    console.log(tambah)
-    if (!tambah.value) {
-      document.getElementById("openidentitaspemotong").disabled = true
+
+    if (!countdokumen) {
+      document.getElementById("identitaspemotong").disabled = true
     }
-    if (tambah.value) {
-      document.getElementById("openidentitaspemotong").disabled = false
+    if (countdokumen) {
+      document.getElementById("identitaspemotong").disabled = false
       document.getElementById("dokdas").disabled = true
     }
 
@@ -783,122 +821,122 @@ function generateDipotong(){
 
   function addTableHarta($this) {
 
-var tahunpajak = document.querySelector('#tahunpajak').value
-console.log(tahunpajak);
-  var masapajak = document.querySelector('#masapajak').value
-console.log(masapajak);
-  var nama = document.querySelector('#nama').value
-console.log(nama);
-var tin = $('input[name="tin"]:checked').val();
-console.log(tin);
+    var tahunpajak = document.querySelector('#tahunpajak').value
+    console.log(tahunpajak);
+    var masapajak = document.querySelector('#masapajak').value
+    console.log(masapajak);
+    var nama = document.querySelector('#nama').value
+    console.log(nama);
+    var tin = $('input[name="tin"]:checked').val();
+    console.log(tin);
 
-  var alamat = document.querySelector('#alamat').value
-console.log(alamat);
-  var negara = document.querySelector('#negara').value
-console.log(negara);
-var tempatlahir = document.querySelector('#tempatlahir').value
-console.log(tempatlahir);
-var tgllahir = document.querySelector('#tgllahir').value
-console.log(tgllahir);
-var nopaspor = document.querySelector('#nopaspor').value
-console.log(nopaspor);
-var nokitab = document.querySelector('#nokitab').value
-console.log(nokitab);
-  var kode_objek_pajak = document.querySelector('#kode_objek_pajak').value
-  var skdwpln = document.querySelector('#skdwpln').value
-  var dtp = document.querySelector('#dtp').value
-  var lainnya = document.querySelector('#lainnya').value
-console.log(kode_objek_pajak);
-  var fasilitas_pajak_penghasilan = $('input[name="fasilitas_pajak_penghasilan"]:checked').val();
-console.log(fasilitas_pajak_penghasilan);
-  var jumlah_penghasilan_bruto = document.querySelector('#jumlah_penghasilan_bruto').value
-console.log(jumlah_penghasilan_bruto);
-var tarif = document.querySelector('#netto').value
-console.log(netto);
-  var tarif = document.querySelector('#tarif').value
-console.log(tarif);
-  var jumlah_setor = document.querySelector('#jumlah_setor').value
-console.log(jumlah_setor);
-  var pengaturan_id = document.querySelector('#pengaturan_id').value
-console.log(pengaturan_id);
-  
-  
-        var data = {
-          tahun_pajak: tahunpajak,
-          masa_pajak: masapajak,
-          nama: nama,
-          tin: tin,
-          alamat: alamat,
-          negara: negara,
-          tempatlahir: tempatlahir,
-          tgllahir: tgllahir,
-          nopaspor: nopaspor,
-          nokitab: nokitab,
-          kode_objek_pajak: kode_objek_pajak,
-          fasilitas_pajak_penghasilan: fasilitas_pajak_penghasilan,
-          skdwpln: skdwpln,
-          dtp: dtp,
-          lainnya: lainnya,
-          jumlah_penghasilan_bruto: jumlah_penghasilan_bruto,
-          netto: netto,
-          tarif: tarif,
-          jumlah_setor: jumlah_setor,
-          pengaturan_id: pengaturan_id,
-          nama_dokumen: $('#nama_dokumen2').attr('data-value'),
-          no_dokumen: $('#no_dokumen2').attr('data-value'),
-          tgl_dokumen: $('#tgl_dokumen2').attr('data-value')
-        }
+    var alamat = document.querySelector('#alamat').value
+    console.log(alamat);
+    var negara = document.querySelector('#negara').value
+    console.log(negara);
+    var tempatlahir = document.querySelector('#tempatlahir').value
+    console.log(tempatlahir);
+    var tgllahir = document.querySelector('#tgllahir').value
+    console.log(tgllahir);
+    var nopaspor = document.querySelector('#nopaspor').value
+    console.log(nopaspor);
+    var nokitab = document.querySelector('#nokitab').value
+    console.log(nokitab);
+    var kode_objek_pajak = document.querySelector('#kode_objek_pajak').value
+    var skdwpln = document.querySelector('#skdwpln').value
+    var dtp = document.querySelector('#dtp').value
+    var lainnya = document.querySelector('#lainnya').value
+    console.log(kode_objek_pajak);
+    var fasilitas_pajak_penghasilan = $('input[name="fasilitas_pajak_penghasilan"]:checked').val();
+    console.log(fasilitas_pajak_penghasilan);
+    var jumlah_penghasilan_bruto = document.querySelector('#jumlah_penghasilan_bruto').value
+    console.log(jumlah_penghasilan_bruto);
+    var tarif = document.querySelector('#netto').value
+    console.log(netto);
+    var tarif = document.querySelector('#tarif').value
+    console.log(tarif);
+    var jumlah_setor = document.querySelector('#jumlah_setor').value
+    console.log(jumlah_setor);
+    var pengaturan_id = document.querySelector('#pengaturan_id').value
+    console.log(pengaturan_id);
 
-        console.log(data);
-        $.ajax({
-            
-            type: "POST",
-            url: 'http://localhost:8000/api/tambahpphnon',
-            data: data,
-            success: function(res) {
-                console.log(res)
-            }
-        });
 
+    var data = {
+      tahun_pajak: tahunpajak,
+      masa_pajak: masapajak,
+      nama: nama,
+      tin: tin,
+      alamat: alamat,
+      negara: negara,
+      tempatlahir: tempatlahir,
+      tgllahir: tgllahir,
+      nopaspor: nopaspor,
+      nokitab: nokitab,
+      kode_objek_pajak: kode_objek_pajak,
+      fasilitas_pajak_penghasilan: fasilitas_pajak_penghasilan,
+      skdwpln: skdwpln,
+      dtp: dtp,
+      lainnya: lainnya,
+      jumlah_penghasilan_bruto: jumlah_penghasilan_bruto,
+      netto: netto,
+      tarif: tarif,
+      jumlah_setor: jumlah_setor,
+      pengaturan_id: pengaturan_id,
+      nama_dokumen: $('#nama_dokumen2').attr('data-value'),
+      no_dokumen: $('#no_dokumen2').attr('data-value'),
+      tgl_dokumen: $('#tgl_dokumen2').attr('data-value')
     }
 
-        function handlerRadioSelect1(){
+    console.log(data);
+    $.ajax({
 
-if(document.getElementById("tanpafasilitas").checked = true){
-  document.getElementById("skdwpln").disabled = true; 
-document.getElementById("dtp").disabled = true;  
-document.getElementById("lainnya").disabled = true;
-}
-}
+      type: "POST",
+      url: 'http://localhost:8000/api/tambahpphnon',
+      data: data,
+      success: function(res) {
+        console.log(res)
+      }
+    });
 
-      
-function handlerRadioSelect2(){
-
-if(document.getElementById("pilihskdwpln").checked = true){
-  document.getElementById("skdwpln").disabled = false; 
-document.getElementById("dtp").disabled = true;  
-document.getElementById("lainnya").disabled = true;
   }
-}
 
-function handlerRadioSelect3(){
+  function handlerRadioSelect1() {
 
-if(document.getElementById("pilihdtp").checked = true){
-document.getElementById("skdwpln").disabled = true; 
-document.getElementById("dtp").disabled = false;   
-document.getElementById("lainnya").disabled = true;
+    if (document.getElementById("tanpafasilitas").checked = true) {
+      document.getElementById("skdwpln").disabled = true;
+      document.getElementById("dtp").disabled = true;
+      document.getElementById("lainnya").disabled = true;
+    }
   }
-}
 
 
-function handlerRadioSelect4(){
+  function handlerRadioSelect2() {
 
-if(document.getElementById("pilihlainnya").checked = true){
-document.getElementById("skdwpln").disabled = true; 
-document.getElementById("dtp").disabled = true;  
-document.getElementById("lainnya").disabled = false;
-}
-}
+    if (document.getElementById("pilihskdwpln").checked = true) {
+      document.getElementById("skdwpln").disabled = false;
+      document.getElementById("dtp").disabled = true;
+      document.getElementById("lainnya").disabled = true;
+    }
+  }
+
+  function handlerRadioSelect3() {
+
+    if (document.getElementById("pilihdtp").checked = true) {
+      document.getElementById("skdwpln").disabled = true;
+      document.getElementById("dtp").disabled = false;
+      document.getElementById("lainnya").disabled = true;
+    }
+  }
+
+
+  function handlerRadioSelect4() {
+
+    if (document.getElementById("pilihlainnya").checked = true) {
+      document.getElementById("skdwpln").disabled = true;
+      document.getElementById("dtp").disabled = true;
+      document.getElementById("lainnya").disabled = false;
+    }
+  }
 </script>
 
 
