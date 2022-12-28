@@ -23,7 +23,9 @@ class PphPasal extends Model
         'jumlah_penghasilan_bruto',
         'tarif',
         'jumlah_setor',
-        'pengaturan_id'
+        'pengaturan_id',
+        'kelebihan_pemotongan',
+        'pernyataan'
     ];
     
 }

@@ -1030,21 +1030,21 @@
                             Pemungutan Unifikasi yang menyebabkan kelebihan
                             pemotongan/pemungutan PPh, maka pihak yang akan diajukan:</p>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <input class="form-check-input" type="radio" name="kelebihan_pemotongan" id="pengembalian" value="pengembalian">
                             <label class="form-check-label" for="flexRadioDefault1">
                               Pengembalian atas pajak yang tidak seharusnya terutang oleh
                               Pemotong dan/ atau Pemungut PPh
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <input class="form-check-input" type="radio" name="kelebihan_pemotongan" id="pemindahbukuan" value="pemindahbukuan" checked>
                             <label class="form-check-label" for="flexRadioDefault2">
                               Pemindahbukuan oleh Pemotong dan/ atau Pemungut PPh
                             </label>
                           </div>
                           <div style="padding:25px;"></div>
                           <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" type="checkbox" value="pernyataan" id="pernyataan" name="pernyataan">
                             <label class="form-check-label" for="defaultCheck1">
                               Dengan ini saya menyatakan bahwa Bukti Pemotongan/Pemungutan
                               Unifikasi yang telah saya isi dengan benar dan telah saya
@@ -1258,10 +1258,8 @@
     console.log(masapajak);
     var nama = document.querySelector('#nama').value
     console.log(nama);
-
     var identitas = $('input[name="identitas"]:checked').val();
     console.log(identitas);
-
     var no_identitas = document.querySelector('#no_identitas').value
     console.log(no_identitas);
     var qq = document.querySelector('#qq').value
@@ -1282,6 +1280,14 @@
     console.log(jumlah_setor);
     var pengaturan_id = document.querySelector('#pengaturan_id').value
     console.log(pengaturan_id);
+    var kelebihan_pemotongan = $('input[name="kelebihan_pemotongan"]:checked').val();
+    console.log(fasilitas_pajak_penghasilan);
+    var pemindahbukuan = document.querySelector('#pemindahbukuan').value
+    console.log(pemindahbukuan);
+    var pengembalian = document.querySelector('#pengembalian').value
+    console.log(pengembalian);
+    var pernyataan = document.querySelector('#pernyataan').value
+    console.log(pernyataan);
 
 
     var data = {
@@ -1303,7 +1309,11 @@
       pengaturan_id: pengaturan_id,
       nama_dokumen: $('#nama_dokumen2').attr('data-value'),
       no_dokumen: $('#no_dokumen2').attr('data-value'),
-      tgl_dokumen: $('#tgl_dokumen2').attr('data-value')
+      tgl_dokumen: $('#tgl_dokumen2').attr('data-value'),
+      kelebihan_pemotongan,
+      pernyataan: pernyataan,
+      pengembalian: pengembalian,
+      pemindahbukuan: pemindahbukuan,
     }
 
     console.log(data);

@@ -44,6 +44,8 @@ Route::get('hapus_pphpasal/{id}', [PPController::class, 'hapus_pphpasal']);
 Route::get('daftarbupotnon', [PPController::class, 'daftarbupotnon']); 
 Route::get('rekambupotnon', [PPController::class, 'rekambupotnon']); 
 Route::post('proses_tambah_pphnon', [PPController::class, 'proses_tambah_pphnon']);
+Route::get('hapus_dokumennon/{id}', [PPController::class, 'hapus_dokumennon']); 
+Route::get('hapus_pphnon/{id}', [PPController::class, 'hapus_pphnon']); 
 
 Route::get('impordata', [PPController::class, 'impordata']); 
 Route::get('posting', [PPController::class, 'posting']); 

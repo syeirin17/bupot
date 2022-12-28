@@ -116,22 +116,29 @@ class PPController extends Controller
     //bupot non residen-----------------------------------
     public function daftarbupotnon()
     {
+        $dokumen_pphnon= Http::get('http://localhost:8000/api/pphnon/');
         $data = [
             'npwp' => auth()->user()->npwp,
-            'nama' => auth()->user()->name
+            'nama' => auth()->user()->name,
+            'daftarbupotnon' => $dokumen_pphnon->json() ?? []
         ];
         return view('daftarbupotnon',$data);
     } 
-
+    
     public function rekambupotnon()
     {
+        $dokumen_pphnon= Http::get('http://localhost:8000/api/dokumen_pphnon/'.auth()->user()->id);
+        $pengaturan= Http::get('http://localhost:8000/api/pengaturan/'.auth()->user()->id);
         $data = [
             'npwp' => auth()->user()->npwp,
-            'nama' => auth()->user()->name
+            'nama' => auth()->user()->name,
+            'pengaturan' => $pengaturan->json(),
+            'dokumen_non' => $dokumen_pphnon->json()
         ];
         return view('rekambupotnon',$data);
     } 
 
+       
     public function proses_tambah_pphnon(Request $request){
         // dd($request->all());
         
@@ -139,6 +146,26 @@ class PPController extends Controller
             // dd($response->json());
             return redirect("daftarbupotnon")->withSuccess('sukses');
     }
+    
+    public function daftar_dokumennon()
+    {
+        $dokumen_pphnon= Http::get('http://localhost:8000/api/dokumen_pphnon/'.auth()->user()->id);
+        $pengaturan= Http::get('http://localhost:8000/api/pengaturan/'.auth()->user()->id);
+        $data = [
+            'npwp' => auth()->user()->npwp,
+            'nama' => auth()->user()->name,
+            'pengaturan' => $pengaturan->json(),
+            'dokumen_non' => $dokumen_pphnon->json()
+        ];
+        // dd($data);
+        return view('rekambupotnon',$data);
+    } 
+
+    public function hapus_pphnon($id){
+        $response = Http::get('http://localhost:8000/api/hapus_pphnon/'.$id);
+        
+        return redirect("daftarbupotnon")->withSuccess('berhasil dihapus');
+    } 
 
     //impor pph---------------------------------------
     public function impordata()

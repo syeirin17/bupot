@@ -499,8 +499,8 @@
                                   });
 
                                   function tambahrow() {
-                                    var rowCount = $('#bupotpasal tr').length;
-                                    var tbody = document.getElementById('bupotpasal');
+                                    var rowCount = $('#bupotnon tr').length;
+                                    var tbody = document.getElementById('bupotnon');
                                     var nama_dokumen = document.getElementById('nama_dokumen').value;
                                     var no_dokumen = document.getElementById('no_dokumen').value;
                                     var tgl_dokumen = document.getElementById('tgl_dokumen').value;
@@ -531,10 +531,10 @@
 
                                   function deleteTable() {
 
-                                    var rowCount = $('#bupotpasal tr').length;
+                                    var rowCount = $('#bupotnon tr').length;
                                     alert(rowCount);
                                     if (rowCount > 0) {
-                                      $('#bupotpasal tr:last').remove();
+                                      $('#bupotnon tr:last').remove();
                                     }
                                   }
                                 </script>
@@ -574,7 +574,7 @@
                                 <th class="text" style="color: #FFFFFF;" scope="col">AKSI</th>
                               </tr>
                             </thead>
-                            <tbody id="bupotpasal">
+                            <tbody id="bupotnon">
 
                             </tbody>
                           </table>
@@ -597,7 +597,7 @@
                     <label for="validationDefault04" class="form-label">Penandatangan
                       Sebagai</label>
                     <select name="pilihsebagai" class="form-select" required>
-                      <option value="{{ $pengaturan['bertindak_sebagai'] }}">{{ $pengaturan['bertindak_sebagai'] }}</option>
+                      <option value="{{ $pengaturan['bertindak_sebagai'] }}">{{ $pengaturan['bertindak_sebagai'] }}</option> 
                     </select>
                   </div>
                   <div class="col-md-4">
@@ -606,7 +606,7 @@
                     <select name="pilihbupot" class="form-select" id="pengaturan_id" required>
                       <option selected disabled value="">Pilih Penandatangan
                       </option>
-                      <option value="{{ $pengaturan['user']['id'] }}">{{ $pengaturan['user']['name'] }}</option>
+                      <option value="{{ $pengaturan['user']['id'] }}">{{ $pengaturan['user']['name'] }}</option> 
                     </select>
                   </div>
                   <div style="padding:10px;">
@@ -616,21 +616,21 @@
                         Pemungutan Unifikasi yang menyebabkan kelebihan
                         pemotongan/pemungutan PPh, maka pihak yang akan diajukan:</p>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="kelebihan_pemotongan" id="pengembalian">
+                        <input class="form-check-input" type="radio" name="kelebihan_pemotongan" id="pengembalian" >
                         <label class="form-check-label" for="flexRadioDefault1">
                           Pengembalian atas pajak yang tidak seharusnya terutang oleh
                           Pemotong dan/ atau Pemungut PPh
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="kelebihan_pemotongan" id="pemindahbukuan" checked>
+                        <input class="form-check-input" type="radio" name="kelebihan_pemotongan" id="pemindahbukuan"  checked>
                         <label class="form-check-label" for="flexRadioDefault2">
                           Pemindahbukuan oleh Pemotong dan/ atau Pemungut PPh
                         </label>
                       </div>
                       <div style="padding:25px;"></div>
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="pernyataan" name="pernyataan">
+                        <input class="form-check-input" type="checkbox" value="pernyataan" id="pernyataan" name="pernyataan">
                         <label class="form-check-label" for="defaultCheck1">
                           Dengan ini saya menyatakan bahwa Bukti Pemotongan/Pemungutan
                           Unifikasi yang telah saya isi dengan benar dan telah saya
@@ -650,7 +650,7 @@
                 <div class="row" style="padding-left: 57%; padding-right:55%;">
                   <div class="col">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                      <a href="{{ url('/daftarbuktipotongBPPs') }}" onclick="addTableHarta(this)" class="button button1" type="button">
+                      <a href="{{ url('/daftarbupotnon') }}" onclick="addTableHarta(this)" class="button button1" type="button">
                         <span>Simpan</span></a>
                         <a class="button button2" type="button">
                           <span>Batal</span></a>
@@ -826,7 +826,7 @@
     console.log(masapajak);
     var nama = document.querySelector('#nama').value
     console.log(nama);
-    var tin = $('input[name="tin"]:checked').val();
+    var tin = document.querySelector('#tin').value
     console.log(tin);
 
     var alamat = document.querySelector('#alamat').value
@@ -858,6 +858,8 @@
     console.log(jumlah_setor);
     var pengaturan_id = document.querySelector('#pengaturan_id').value
     console.log(pengaturan_id);
+    var kelebihan_pemotongan = $('input[name="kelebihan_pemotongan"]:checked').val();
+    console.log(kelebihan_pemotongan);
     var pemindahbukuan = document.querySelector('#pemindahbukuan').value
     console.log(pemindahbukuan);
     var pengembalian = document.querySelector('#pengembalian').value
@@ -866,8 +868,8 @@
     console.log(pernyataan);
 
     var data = {
-      tahun_pajak: tahunpajak,
-      masa_pajak: masapajak,
+      tahunpajak: tahunpajak,
+      masapajak: masapajak,
       nama: nama,
       tin: tin,
       alamat: alamat,
@@ -888,7 +890,8 @@
       pengaturan_id: pengaturan_id,
       nama_dokumen: $('#nama_dokumen2').attr('data-value'),
       no_dokumen: $('#no_dokumen2').attr('data-value'),
-      tgl_dokumen: $('#tgl_dokumen2').attr('data-value')
+      tgl_dokumen: $('#tgl_dokumen2').attr('data-value'),
+      kelebihan_pemotongan: kelebihan_pemotongan,
       pemindahbukuan: pemindahbukuan,
       pengembalian: pengembalian,
       pernyataan: pernyataan
