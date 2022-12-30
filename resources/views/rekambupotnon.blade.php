@@ -14,6 +14,9 @@
 
   <title>Rekam Non Residen | E-Bupot</title>
   <style>
+    #content {
+      flex: 1 0 auto;
+    }
     * {
       box-sizing: border-box;
     }
@@ -30,10 +33,10 @@
     }
 
     .content {
-      /* background-image: url("{{ asset('poltek.jpeg') }}");
+      background-image: url("{{ asset('poltek.jpeg') }}");
       background-repeat: no-repeat;
-      background-size: cover; */
-      height: 620px;
+      background-size: cover; 
+      height: 1000px;
     }
 
     .navbar-expand-lg {
@@ -197,10 +200,14 @@
       color: #FFF;
       padding-top: 30px;
     }
+    .footer {
+      position: relative;
+      
+    }
   </style>
 </head>
 
-<body>
+<body class="d-flex flex-column">
   <header class=" mb-3 border-bottom">
     <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;"><img src="{{ asset('taxcentre1.png') }}" alt="" srcset="">
       <div class="d-flex align-items-center">
@@ -667,7 +674,46 @@
     </div>
   </div>
   </div>
+  {{-- <div class="footer"  style="background-color: rgba(0,0,0,0.7); height:auto"> 
+    <div class="container text-center text-md-start mt-5">
+      <img src="{{ asset('taxcentre.png') }}" alt="">
+        <div>
+            <span style="color: #FFF;"><i>Alamat: <br>
+            Jl. Ahmad Yani Batam Kota. Kota Batam. <br>
+            Kepulauan Riau. Indonesia <br><br>
+            Email : info@polibatam.ac.id <br>
+            Phone : +62-778-469858 Ext.1017 <br>
+            Fax : +62-778-463620 <br>
+            Email : info@polibatam.ac.id</i></span>
+        </div>
+    </div>
+<div class="text-center">
+    <span style="color: #FFF; font-size: 36px; font-family:'Satisfy',serif;"><i>Tax Center</span><br>
+    <span style="color: #FFF; font-size: 14px">Politeknik Negeri Batam</i></span><br>
 
+    <div class="media-social">
+      <a href=""><i class="fa-brands fa-twitter"></i></a>
+    </div>
+    <div class="media-social">
+      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+    </div>
+    <div class="media-social">
+      <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+    </div>
+    <div class="media-social">
+      <a href=""><i class="fa-brands fa-skype"></i></a>
+    </div>
+    <div class="media-social">
+      <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+
+    <div class="copyright">
+      <i class="fa-regular fa-copyright"></i> Copyright
+      <strong>Polibatam Software Team</strong>
+      All Rights Reserved
+    </div>
+</div>
+</div>--}}
 
 
 

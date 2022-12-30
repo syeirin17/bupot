@@ -270,8 +270,11 @@
                   </div>
                   <div class="col-6" style="width: 30%">
                     <select class="form-select" id="validationDefault04" required>
-                      <option selected disabled value="">Pilih Tahun Pajak</option>
-                      <option>2022</option>
+                      {{-- <option selected disabled value="">Pilih Tahun Pajak</option> --}}
+                      {{-- <option value="{{ $pphsendiri['tahun_pajak'] }}">{{ $pphsendiri['tahun_pajak'] }}</option>  --}}
+                      {{-- <option value="{{ $pphpasal['tahun_pajak'] }}">{{ $pphpasal['tahun_pajak'] }}</option>  --}}
+                      {{-- <option value="{{ $pph_nonresiden['tahun_pajak'] }}">{{ $pph_nonresiden['tahun_pajak'] }}</option>  --}}
+
                     </select>
                   </div>
                   <div class="col-6">
@@ -280,18 +283,9 @@
                   <div class="col-6" style="padding-top: 5px; width: 30%">
                     <select class="form-select" id="validationDefault04" required>
                       <option selected disabled value="">Pilih Masa Pajak</option>
-                      <option>Januari</option>
-                      <option>Februari</option>
-                      <option>Maret</option>
-                      <option>April</option>
-                      <option>Mei</option>
-                      <option>Juni</option>
-                      <option>Juli</option>
-                      <option>Agustus</option>
-                      <option>September</option>
-                      <option>Oktober</option>
-                      <option>November</option>
-                      <option>Desember</option>
+                      <option value="{{ $pphsendiri['masa_pajak'] }}">{{ $pphsendiri['masa_pajak'] }}</option> 
+                      {{-- <option value="{{ $pphpasal['masa_pajak'] }}">{{ $pphpasal['masa_pajak'] }}</option>  --}}
+                      {{-- <option value="{{ $pph_nonresiden['masa_pajak'] }}">{{ $pph_nonresiden['masa_pajak'] }}</option>  --}}
                     </select>
                   </div>
                 </div>

@@ -132,7 +132,7 @@
                                 <button type="submit" class="btn btn-primary">Sign up</button>
                             </div>
                         </form>
-                        <p class="small fw-bold mt-2 pt-1 mb-0">Have already an account?  <a href="login"
+                        <p class="small fw-bold mt-2 pt-1 mb-0">Have already an account <a href="login"
                             class="link-danger">Sign In</a></p>
                     </div>
                 </div>
@@ -140,6 +140,7 @@
         </div>
     </div>
 </main>
+
 <div class="shadow-sm" id="footer" style="background-color: rgba(0,0,0,0.7); height:auto">
     <div class="container text-center text-md-start mt-5">
       <img src="{{ asset('taxcentre.png') }}" alt="">

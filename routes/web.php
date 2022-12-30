@@ -48,7 +48,15 @@ Route::get('hapus_dokumennon/{id}', [PPController::class, 'hapus_dokumennon']);
 Route::get('hapus_pphnon/{id}', [PPController::class, 'hapus_pphnon']); 
 
 Route::get('impordata', [PPController::class, 'impordata']); 
+
 Route::get('posting', [PPController::class, 'posting']); 
+
+Route::get('sptmasa', [SPTController::class, 'sptmasa']);
+Route::get('penyiapanspt', [SPTController::class, 'penyiapanspt']);
+Route::post('proses_tambah_buktisetor', [SPTController::class, 'proses_tambah_buktisetor']);
+Route::get('hapus_buktisetor/{id}', [SPTController::class, 'hapus_buktisetor']); 
+
+
 Route::get('suratbupotpasal', [PPController::class, 'suratbupotpasal']); 
 Route::get('suratbupotsendiri', [PPController::class, 'suratbupotsendiri']); 
 Route::get('download_folder', [PPController::class, 'getDownload']); 

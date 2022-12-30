@@ -30,7 +30,7 @@
       /* background-image: url("{{ asset('poltek.jpeg') }}");
       background-repeat: no-repeat;
       background-size: cover; */
-      height: 620px;
+      height: 800px;
     }
 
     .navbar-expand-lg {
@@ -182,15 +182,15 @@
             height: 36px;
         }
 
-        .media-social i {
-            color: #FFF;
-        }
+    .media-social i {
+      color: #FFF;
+    }
 
-        .copyright {
-            font-size: 12px;
-            color: #FFF;
-            padding-top: 30px;
-        }
+    .copyright {
+      font-size: 12px;
+      color: #FFF;
+      padding-top: 30px;
+    }
   </style>
 </head>
 
@@ -344,6 +344,49 @@
             </div>
           </div>
         </div>
+        <div class="footer"  style="background-color: rgba(0,0,0,0.7); height:auto">
+          <div class="container text-center text-md-start mt-5">
+            <img src="{{ asset('taxcentre.png') }}" alt="">
+              <div>
+                  <span style="color: #FFF;"><i>Alamat: <br>
+                  Jl. Ahmad Yani Batam Kota. Kota Batam. <br>
+                  Kepulauan Riau. Indonesia <br><br>
+                  Email : info@polibatam.ac.id <br>
+                  Phone : +62-778-469858 Ext.1017 <br>
+                  Fax : +62-778-463620 <br>
+                  Email : info@polibatam.ac.id</i></span>
+              </div>
+          </div>
+      <div class="text-center">
+          <span style="color: #FFF; font-size: 36px; font-family:'Satisfy',serif;"><i>Tax Center</span><br>
+          <span style="color: #FFF; font-size: 14px">Politeknik Negeri Batam</i></span><br>
+      
+          <div class="media-social">
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <div class="media-social">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+          <div class="media-social">
+            <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+          </div>
+          <div class="media-social">
+            <a href=""><i class="fa-brands fa-skype"></i></a>
+          </div>
+          <div class="media-social">
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+      
+          <div class="copyright">
+            <i class="fa-regular fa-copyright"></i> Copyright
+            <strong>Polibatam Software Team</strong>
+            All Rights Reserved
+          </div>
+      </div>
+      </div>
+      
+      
+
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
       </script>
