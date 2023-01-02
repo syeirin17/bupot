@@ -7,9 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-  <title>Penyiapan SPT Masa</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+  <link href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <title>Penyiapan SPT Masa | E-Bupot</title>
   <style>
     * {
       box-sizing: border-box;
@@ -30,7 +32,7 @@
       background-image: url("{{ asset('poltek.jpeg') }}");
       background-repeat: no-repeat;
       background-size: cover; */
-      height: 620px;
+      height: 800px;
     }
 
     .navbar-expand-lg {
@@ -584,6 +586,12 @@
               </ul>
             </nav>
           </div>
-          <div style="padding:5px;"></div>
+        </div>
+        <div style="padding: 5px"></div>
+      </div>
+    </div>
 
+         
+
+</body>
     

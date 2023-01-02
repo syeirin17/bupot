@@ -34,7 +34,7 @@
       /* background-image: url("{{ asset('poltek.jpeg') }}");
       background-repeat: no-repeat;
       background-size: cover; */
-      height: 620px;
+      height: 800px;
     }
 
     .navbar-expand-lg {
@@ -1081,57 +1081,48 @@
         </div>
       </div>
     </div>
-    <div style="padding:15%"></div>
-    <div class="shadow-sm " id="footer" style="background-color: rgba(0,0,0,0.7); height:auto">
-      <div align="center" class="col-sm-3">
+    
+
+    <div class="shadow-sm" id="footer" style="background-color: rgba(0,0,0,0.7); height:auto">
+      <div class="container text-center text-md-start mt-5">
         <img src="{{ asset('taxcentre.png') }}" alt="">
+          <div>
+              <span style="color: #FFF;"><i>Alamat: <br>
+              Jl. Ahmad Yani Batam Kota. Kota Batam. <br>
+              Kepulauan Riau. Indonesia <br><br>
+              Email : info@polibatam.ac.id <br>
+              Phone : +62-778-469858 Ext.1017 <br>
+              Fax : +62-778-463620 <br>
+              Email : info@polibatam.ac.id</i></span>
+          </div>
       </div>
-      <div align="center" class="col-sm-4">
-        <span style="color: #FFF;"> <i>Alamat</i> </span>
-        <div align="left" class="col-sm-8">
-          <span style="color: #FFF;"><i>Jl. Ahmad Yani Batam Kota. Kota Batam. <br> kepulauan Riau.
-              Indonesia</i> </span>
-        </div>
-        <div align="left" class="col-sm-8">
-          <span style="color: #FFF;"><i><br> Email : info@polibatam.ac.id <br>Phone : +62-778-469858 Ext.1017
-              <br>Fax : +62-778-463620 <br>
-              Email : info@polibatam.ac.id</i> </span>
-        </div>
+  <div class="text-center">
+      <span style="color: #FFF; font-size: 36px; font-family:'Satisfy',serif;"><i>Tax Center</span><br>
+      <span style="color: #FFF; font-size: 14px">Politeknik Negeri Batam</i></span><br>
+  
+      <div class="media-social">
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
       </div>
-      <div align="center" class="col-sm-12">
-        <span style="color: #FFF; font-size: 36px; font-family:'Satisfy',serif;"> <i>Tax Center</i> </span>
+      <div class="media-social">
+        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
       </div>
-      <div align="center" class="col-sm-12">
-        <span style="color: #FFF; font-size: 14px"> <i>Politeknik Negeri Batam</i> </span>
+      <div class="media-social">
+        <a href=""><i class="fa-brands fa-instagram"></i></i></a>
       </div>
-      <div align="center" class="col-sm-12" style="padding-top: 30px;">
-        <div class="media-social">
-          <a href=""><i class="fa-brands fa-twitter"></i></a>
-        </div>
-        <div class="media-social">
-          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-        </div>
-        <div class="media-social">
-          <a href=""><i class="fa-brands fa-instagram"></i></i></a>
-        </div>
-        <div class="media-social">
-          <a href=""><i class="fa-brands fa-skype"></i></a>
-        </div>
-        <div class="media-social">
-          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-        </div>
+      <div class="media-social">
+        <a href=""><i class="fa-brands fa-skype"></i></a>
       </div>
-
-      <div align="center" class="col-sm-12">
-        <div class="copyright">
-          <i class="fa-regular fa-copyright"></i> Copyright
-          <strong>Polibatam Software Team</strong>
-          All Rights Reserved
-        </div>
+      <div class="media-social">
+        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
       </div>
-    </div>
+  
+      <div class="copyright">
+        <i class="fa-regular fa-copyright"></i> Copyright
+        <strong>Polibatam Software Team</strong>
+        All Rights Reserved
+      </div>
   </div>
-
+  </div>
 
 
 

@@ -8,10 +8,12 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-  <title>Penyiapan SPT Masa</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+  <link href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <title>Penyiapan SPT Masa | E-Bupot</title>
   <style>
-    * {
+     *{
       box-sizing: border-box;
     }
 
@@ -27,10 +29,10 @@
     }
 
     .content {
-      background-image: url("{{ asset('poltek.jpeg') }}");
+/*       
       background-repeat: no-repeat;
       background-size: cover; */
-      height: 620px;
+      height: 800px;
     }
 
     .navbar-expand-lg {
@@ -48,180 +50,89 @@
     }
 
 
-    .body{
-    width: 100%;
-    height: 100%;
-    padding-top: 1%, 1%, 1%;
-    position: relative;
+    .tab_triger ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
     }
 
-    .orangebox{
-        width: 100%;
-        height: 200px;
-        background-color: #FBC127;
-        top: 150px;
-        position: absolute;
-        z-index: 1;
+    .tab_triger ul li label {
+      position: relative;
+      display: block;
+      padding: 8px 15px;
+      cursor: pointer;
+      min-width: 150px;
+      background: #e6e6e6;
+      text-align: center;
+      font-weight: 700;
+      border-radius: 8px 40px 0 0;
     }
 
-    .form{
-        width: 100%;
-        height: 600px;
-        background-color: white;
-        top: 20px;
-        position: absolute;
-        z-index: 10;
+    .tab_triger ul li:nth-child(1) label {
+      background: #191970;
+      color: #FFFFFF;
     }
 
-    .header{
-        width: 100%;
-        height: 130px;
-        border-radius: 25px;
-        background-color: white;
+    .tab_triger ul li:nth-child(2) label {
+      background: #C0C0C0;
+      color: #FFFFFF;
     }
 
-    .boxitem{
-        text-align: center;
-        height: 120px;
-        width: 100%;
-        background-color: white;
+    .tab_container_wrap input {
+      position: absolute;
+      width: 0;
+      height: 0;
+      margin: 0;
+      z-index: -100;
+      top: -1000px;
     }
 
-    .moneypng{
-        width: 80px;
-        height: 80px;
-        margin-top: 5px;
-        margin-bottom: 5px;
+    .tab_container_wrap input:checked+.tab_content_box {
+      display: block;
     }
 
-    .blockrow{
-        margin-top: 20px;
-        width: 100%;
-        height: 40px;
-        padding-left: 20px;
-        background-color: #2F0F5F;
+    .tab_content_box {
+      background: #F5F5F5;
+      padding: 20px;
+      display: none;
     }
 
-    .camerapng{
-        width: 30px;
-        height: 30px;
-        margin-top: 5px;
-        filter: invert(1);
+    .tab_content_box:nth-child(1) {
+      background: #f0f0f0;
+
     }
 
-    .payments{
-        padding: 10px;
-        width: 100%;
-        height: 80px;
-        background-color: white;
+    .tab_content_box:nth-child(2) {
+      background: #f0f0f0;
     }
 
-    .selecttax{
-        background-color: white;
-        border: 1px solid gray;
-        margin-left: 100px;
-        font-size: 12px;
-        height: 30px;
-        width: 35%;
+    .tab_content_box h2 {
+      margin: 0 0 20px;
     }
 
-    .checktax{
-        width: 95px;
-        height: 30px;
-        border-radius: 25px;
-        margin-left: 360px;
-        margin-top: -30px ;
-        font-size: 12px;
-        background-color: #2F0F5F;
-        color: white;
-        border: 0px;
-        float: left;
+    .button1 {
+      background-color: white; 
+      color: rgb(255, 157, 49); 
+      border: 1px solid rgb(255, 157, 49);
+      border-radius: 5px;
     }
 
-    .infotax{
-        margin-top: 20px;
-        width: 100%;
-        height: 280px;
-        background-color: white;
-        padding: 1%;
-    }
-
-    .amounttax{
-        width: 100%;
-        height: 60px;
-        background-color:#A1C4EC;
-        padding: 15px;
-        border-radius: 12px;
-        margin-bottom: 10px;
-    }
-
-    .boxproof{
-      width: 100%;
-      height: 500px;
-    }
-
-    .headerproof{
-      width: 100%;
-      height: 40px;
-      padding: 10px;
-      background-color: #191970;
-    }
-
-    .headerproof h5{
-      font-weight: 300;
+    .button1:hover {
+      background-color: rgb(255, 157, 49);
       color: white;
     }
 
-    .bodyproof{
-      margin-top: 20px;
+    .button2 {
+      background-color: white;  
+      color: grey; 
+      border: 2px solid lightgray;
+      border-radius: 5px; 
     }
 
-    .buttonproof{
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      border: 0;
-      background-color: #191970;
-    }
-
-    .buttonaddproof{
-      width: 100px;
-      height: 30px;
-      border: 0;
-      border-radius: 25px;
-      float: right;
-      margin-top: -38px;
-    }
-
-    .numicon{
-      width: 40px;
-      height: 40px;
-      background-color: #191970;
-    }
-
-    .accordion {
-      background-color: rgb(4, 153, 195);
-      color: black;
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 15px;
-      transition: 0.4s;
-    }
-
-    .active, .accordion:hover {
-      background-color: white;
-    }
-
-    .panel {
-      padding: 3px;
-      background-color: white;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.2s ease-out;
+    .button2:hover {
+      background-color: grey;
+      color: white;
     }
 
     header {
@@ -411,3 +322,50 @@
       </table>
     </div>
 </div>
+</div>
+        </div>
+      </div>
+    </div>
+
+    
+<div class="shadow-sm" id="footer" style="background-color: rgba(0,0,0,0.7); height:auto">
+  <div class="container text-center text-md-start mt-5">
+    <img src="{{ asset('taxcentre.png') }}" alt="">
+      <div>
+          <span style="color: #FFF;"><i>Alamat: <br>
+          Jl. Ahmad Yani Batam Kota. Kota Batam. <br>
+          Kepulauan Riau. Indonesia <br><br>
+          Email : info@polibatam.ac.id <br>
+          Phone : +62-778-469858 Ext.1017 <br>
+          Fax : +62-778-463620 <br>
+          Email : info@polibatam.ac.id</i></span>
+      </div>
+  </div>
+<div class="text-center">
+  <span style="color: #FFF; font-size: 36px; font-family:'Satisfy',serif;"><i>Tax Center</span><br>
+  <span style="color: #FFF; font-size: 14px">Politeknik Negeri Batam</i></span><br>
+
+  <div class="media-social">
+    <a href=""><i class="fa-brands fa-twitter"></i></a>
+  </div>
+  <div class="media-social">
+    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+  </div>
+  <div class="media-social">
+    <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+  </div>
+  <div class="media-social">
+    <a href=""><i class="fa-brands fa-skype"></i></a>
+  </div>
+  <div class="media-social">
+    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+  </div>
+
+  <div class="copyright">
+    <i class="fa-regular fa-copyright"></i> Copyright
+    <strong>Polibatam Software Team</strong>
+    All Rights Reserved
+  </div>
+</div>
+</div>
+

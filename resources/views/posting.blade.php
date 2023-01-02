@@ -8,8 +8,10 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-  <title>Posting</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+  <link href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <title>Posting | E-Bupot</title>
   <style>
     * {
       box-sizing: border-box;
@@ -30,7 +32,7 @@
       /* background-image: url("{{ asset('poltek.jpeg') }}");
       background-repeat: no-repeat;
       background-size: cover; */
-      height: 620px;
+      height: 800px;
     }
 
     .navbar-expand-lg {
@@ -270,7 +272,7 @@
                   </div>
                   <div class="col-6" style="width: 30%">
                     <select class="form-select" id="validationDefault04" required>
-                      {{-- <option selected disabled value="">Pilih Tahun Pajak</option> --}}
+                      <option selected disabled value="">Pilih Tahun Pajak</option> 
                       {{-- <option value="{{ $pphsendiri['tahun_pajak'] }}">{{ $pphsendiri['tahun_pajak'] }}</option>  --}}
                       {{-- <option value="{{ $pphpasal['tahun_pajak'] }}">{{ $pphpasal['tahun_pajak'] }}</option>  --}}
                       {{-- <option value="{{ $pph_nonresiden['tahun_pajak'] }}">{{ $pph_nonresiden['tahun_pajak'] }}</option>  --}}
@@ -283,7 +285,7 @@
                   <div class="col-6" style="padding-top: 5px; width: 30%">
                     <select class="form-select" id="validationDefault04" required>
                       <option selected disabled value="">Pilih Masa Pajak</option>
-                      <option value="{{ $pphsendiri['masa_pajak'] }}">{{ $pphsendiri['masa_pajak'] }}</option> 
+                      {{-- <option value="{{ $pphsendiri['masa_pajak'] }}">{{ $pphsendiri['masa_pajak'] }}</option>  --}}
                       {{-- <option value="{{ $pphpasal['masa_pajak'] }}">{{ $pphpasal['masa_pajak'] }}</option>  --}}
                       {{-- <option value="{{ $pph_nonresiden['masa_pajak'] }}">{{ $pph_nonresiden['masa_pajak'] }}</option>  --}}
                     </select>
@@ -340,7 +342,46 @@
 
   </div>
 
+  <div class="shadow-sm" id="footer" style="background-color: rgba(0,0,0,0.7); height:auto">
+    <div class="container text-center text-md-start mt-5">
+      <img src="{{ asset('taxcentre.png') }}" alt="">
+        <div>
+            <span style="color: #FFF;"><i>Alamat: <br>
+            Jl. Ahmad Yani Batam Kota. Kota Batam. <br>
+            Kepulauan Riau. Indonesia <br><br>
+            Email : info@polibatam.ac.id <br>
+            Phone : +62-778-469858 Ext.1017 <br>
+            Fax : +62-778-463620 <br>
+            Email : info@polibatam.ac.id</i></span>
+        </div>
+    </div>
+<div class="text-center">
+    <span style="color: #FFF; font-size: 36px; font-family:'Satisfy',serif;"><i>Tax Center</span><br>
+    <span style="color: #FFF; font-size: 14px">Politeknik Negeri Batam</i></span><br>
 
+    <div class="media-social">
+      <a href=""><i class="fa-brands fa-twitter"></i></a>
+    </div>
+    <div class="media-social">
+      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+    </div>
+    <div class="media-social">
+      <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+    </div>
+    <div class="media-social">
+      <a href=""><i class="fa-brands fa-skype"></i></a>
+    </div>
+    <div class="media-social">
+      <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+
+    <div class="copyright">
+      <i class="fa-regular fa-copyright"></i> Copyright
+      <strong>Polibatam Software Team</strong>
+      All Rights Reserved
+    </div>
+</div>
+</div>
 
 
 

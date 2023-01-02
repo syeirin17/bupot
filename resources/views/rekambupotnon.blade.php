@@ -409,7 +409,7 @@
                   <label for="">Perkiraan Penghasilan Netto</label>
                 </div>
                 <div class="col-6">
-                  <input class="form-control" style="height:30px; width:71%;" id="netto" name="netto" type="text" placeholder="" aria-label="default input" disabled>
+                  <input class="form-control" style="height:30px; width:71%;" id="netto" name="netto" type="text" placeholder="" aria-label="default input" >
                 </div>
                 <div style="padding: 3px;"></div>
                 <div class="row">
@@ -674,7 +674,7 @@
     </div>
   </div>
   </div>
-  {{-- <div class="footer"  style="background-color: rgba(0,0,0,0.7); height:auto"> 
+   <div class="footer"  style="background-color: rgba(0,0,0,0.7); height:auto">  
     <div class="container text-center text-md-start mt-5">
       <img src="{{ asset('taxcentre.png') }}" alt="">
         <div>
@@ -713,7 +713,7 @@
       All Rights Reserved
     </div>
 </div>
-</div>--}}
+</div>
 
 
 
