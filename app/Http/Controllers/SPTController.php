@@ -5,14 +5,7 @@ use App\Models\RekamSPT;
 
 class SPTController extends Controller
 {
-    public function sptmasa()
-    {
-        $data = [
-            'npwp' => auth()->user()->npwp,
-            'nama' => auth()->user()->name
-        ];
-        return view('sptmasa',$data);
-    }  
+    
 
     public function rekambuktisetor()
     {
@@ -31,19 +24,18 @@ class SPTController extends Controller
             return redirect("sptmasa")->withSuccess('sukses');
         }
 
-    public function daftarbuktisetor()
+    public function sptmasa()
     {
         $data = [
-            'npwp' => auth()->user()->npwp,
-            'nama' => auth()->user()->name,
             'daftarbuktisetor' => RekamSPT::get()
         ];
         return view('sptmasa',$data);
     }
 
-     public function hapus_buktisetor($id){
+    public function hapus_buktisetor($id){
         $response = Http::get('http://localhost:8000/api/hapus_buktisetor/'.$id);
         
         return redirect("sptmasa")->withSuccess('berhasil dihapus');
     } 
+
 }

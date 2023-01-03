@@ -272,7 +272,11 @@
                   </div>
                   <div class="col-6" style="width: 30%">
                     <select class="form-select" id="validationDefault04" required>
-                      <option selected disabled value="">Pilih Tahun Pajak</option> 
+                      <option selected disabled value="">Pilih Tahun Pajak</option>
+                      <option>2022</option> 
+                      <option>2023</option> 
+                      <option>2024</option> 
+                      
                       {{-- <option value="{{ $pphsendiri['tahun_pajak'] }}">{{ $pphsendiri['tahun_pajak'] }}</option>  --}}
                       {{-- <option value="{{ $pphpasal['tahun_pajak'] }}">{{ $pphpasal['tahun_pajak'] }}</option>  --}}
                       {{-- <option value="{{ $pph_nonresiden['tahun_pajak'] }}">{{ $pph_nonresiden['tahun_pajak'] }}</option>  --}}
@@ -285,6 +289,18 @@
                   <div class="col-6" style="padding-top: 5px; width: 30%">
                     <select class="form-select" id="validationDefault04" required>
                       <option selected disabled value="">Pilih Masa Pajak</option>
+                      <option>Januari</option> 
+                      <option>Februari</option>
+                      <option>Maret</option>
+                      <option>April</option>
+                      <option>Mei</option>
+                      <option>Juni</option>
+                      <option>Juli</option>
+                      <option>Agustus</option>
+                      <option>September</option>
+                      <option>Oktober</option>  
+                      <option>November</option>
+                      <option>Desember</option>
                       {{-- <option value="{{ $pphsendiri['masa_pajak'] }}">{{ $pphsendiri['masa_pajak'] }}</option>  --}}
                       {{-- <option value="{{ $pphpasal['masa_pajak'] }}">{{ $pphpasal['masa_pajak'] }}</option>  --}}
                       {{-- <option value="{{ $pph_nonresiden['masa_pajak'] }}">{{ $pph_nonresiden['masa_pajak'] }}</option>  --}}
@@ -311,9 +327,9 @@
                           <p class="card-secondary" style="margin-left:13%; font-weight: bold; color:red;">Anda akan buat SPT Baru 2022/02 revisi ke-0?</p>
                           <div class="row" style="padding-left: 45%; padding-right:33%;">
                             <div class="col">
-                              <div class="d-grid gap-4 d-md-flex justify-content-md-end">
+                              <div class="d-grid gap-4 d-md-flex justify-content-md-end" style="margin-right:54%; width: 60px " >
                                 <button class="button button2" type="button">Batal</button>
-                                <a type="button" class="button button1" style="margin-right:54%; width: 60px " data-bs-toggle="modal" data-bs-target="Modal" data-bs-whatever="@mdo">
+                                <a href="sptmasa" class="button button1" >
                                   Oke</a>
                               </div>
                             </div>

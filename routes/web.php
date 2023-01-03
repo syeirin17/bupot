@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PPController;
 use App\Http\Controllers\PengController;
+use App\Http\Controllers\SPTController;
+
 
 
 /*
@@ -48,13 +50,12 @@ Route::get('hapus_dokumennon/{id}', [PPController::class, 'hapus_dokumennon']);
 Route::get('hapus_pphnon/{id}', [PPController::class, 'hapus_pphnon']); 
 
 Route::get('impordata', [PPController::class, 'impordata']); 
-
 Route::get('posting', [PPController::class, 'posting']); 
 
 Route::get('sptmasa', [SPTController::class, 'sptmasa']);
 Route::get('rekambuktisetor', [SPTController::class, 'tambah']); 
 Route::get('daftarbuktisetor', [SPTController::class, 'sptmasa']); 
-Route::post('proses_tambah_buktisetor', [SPTController::class, 'proses_tambah_buktisetor']);
+Route::post('tambah_buktisetor', [SPTController::class, 'proses_tambah_buktisetor']);
 Route::get('hapus_buktisetor/{id}', [SPTController::class, 'hapus_buktisetor']); 
 
 Route::get('penyiapanspt', [SPTController::class, 'penyiapanspt']);
@@ -65,9 +66,7 @@ Route::get('download_folder', [PPController::class, 'getDownload']);
 
 
 
-Route::get('/sptmasa', function () {
-    return view('sptmasa');
-});
+
 Route::get('/penyiapanspt', function () {
     return view('penyiapanspt');
 });

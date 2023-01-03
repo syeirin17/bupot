@@ -398,17 +398,34 @@
               <div class="col-3">
               <label style="font-size: 15px">Tahun Pajak</label>
               </div>
-              <div class="col">
-                <select name="tahun pajak" id="tahun pajak">
+              <div class="col"  style="width: 30%">
+                <select class="form-select" id="validationDefault04" required>
                   <option value="pilih">Pilih Tahun Pajak</option>
+                  <option>2022</option>
+                  <option>2023</option>
+                  <option>2024</option>
+
+                  
                 </select>
               </div>
               <div class="col">
                 <label style="font-size: 15px">Masa Pajak</label>
               </div>
-              <div class="col">
-                <select name="taxyear" id="taxyear" >
+              <div class="col" style="width: 30%">
+                <select class="form-select" id="validationDefault04" required>
                   <option value="pilih">Pilih Masa Pajak</option>
+                  <option>Januari</option> 
+                      <option>Februari</option>
+                      <option>Maret</option>
+                      <option>April</option>
+                      <option>Mei</option>
+                      <option>Juni</option>
+                      <option>Juli</option>
+                      <option>Agustus</option>
+                      <option>September</option>
+                      <option>Oktober</option>  
+                      <option>November</option>
+                      <option>Desember</option>
                 </select>
               </div>
               <div class="col">
@@ -525,14 +542,17 @@
                     <tbody>
                       @foreach ($daftarbuktisetor as $data)
                       <tr style="font-weight: 200; font-size: 15px; text-align: center;">
-                        <td>1</td>
+                        <td>{{ $loop->iteration}}</td>
                         <td>{{ $data['ntpn'] }}</td>
                         <td>{{ $data['jenis_pajak'] }}</td>
                         <td>{{ $data['jenis_setoran'] }}</td>                                
                         <td>{{ $data['masa_pajak'] }}-{{ $data['tahun_pajak'] }}</td>
                         <td>{{ $data['tanggal_setor'] }}</td>
                         <td>{{ $data['jumlah_setor'] }}</td>
-                        <td><img src="hapus.png" style="width: 20px"></td>
+                        <td>
+                          <a href="{{url('/hapus_buktisetor/'.$data['id'])}}">
+                            <img a type="button" style="width: 20px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAADwElEQVRoge1Zv4/cRBT+3oyPO53YwC4XG89RHdfxJyClggKRKAUC0dDQIUCImgJoECCRgrQnpJRpAEFESrr8B6lyICRuvXbYrMTtRmtd2HkUN3Ysn/c8kx1fk/sa+3n8fnzz3vyygXOc4+kG+TYYhmEkpfyYiK4AeNk83mfmX7XW17Msu+/Tn1cCcRy/RUQ/ALiw5JV/mfn90Wj0oy+f3giY4G8CkC2vLpj57dFo9JMPv8KHkTAMIyLaw+Pg7xHROwAuaq1DAO8C2Ddtkoj2oigKffgOvBgJgg8BPG/Efa31q2ma/lN55WYURb9LKe/geFwMpJQfAPhyVd9eMgDgcuX+81rwAIAsy+4z8xeVR1d8OG4cA9vb218x86cANnw48YCciK4Nh8PP6g1NBEgpdQjg2e7jcsIsSZJe/WFTCTERfQ8g7z4ma+QmphNonUaVUlcB/GzEW0mSeKndU/zdAvCmEa8mSfLLae+3DmIhRFoRX1whNlvES3w3opWA1nrUZLxDlJ1U892IVgL9fj8FwEaMbHRWgABQLHDc7/ezNgWrrYRSagzgBQBYLBaR7w1ZgTAMoyAIirIZJ0lysU3HqjeJqExlEARLyyiO4++UUnOl1LcubQXW1tbK8iGi1voHLAkwc0lAa72UABF9hOPF7xOXtibbVZ+nwTYDZW8IIU6biZ6pXW3bCj+quPdKwDYDq4KZqyXUTQaIqLO1gIiqJdTNGECHa0GVgNcMnNViVi0hr2NASnnmGaj5XAorAvP5vFqPZ5KBPM/9jYHJZHII4KERN7e2tk7sy1fFzs7OcwA2jfhwPB5PbfRc9jVlj6yvr3vPQp7nVZtW5QO4ESiNLhYL7wSq9Y+uCQghvBOo1j86IlCWUM2ZF9QyYDWAAQcC1Xm55swLmLnbEhJCdEoAlenZdhUGHAhorW1KKK9dbduA49Ne4av1JFbAawaI6BqAmblatxlUD/PWGbD+Oh1FUSilLHrmQZIkW7a6NlBKTQD0AUBrHTZ9nmyCdQayLBsDeGTEwe7u7rpzlEtgbBUfh/9L0/SBra7LNKoBFId5ms1m3gbydDpVeFwNmfFlBddPJH+UikK85qi7PAghXi/umfmei67r/4HbAC6Z+2/iOJ5IKW8fHBzMHe0AAJRSm8z8BhF9XTwjot9cbDj9YhoMBhc2NjbuAnjJRc8Bfx8dHb1iuxMFHEtoMpkcmr+P1tOcAxIhxGWX4IH2H3InMJ1O016vd8OIEYDek9gxeATgTwB7RPTecDj86wntnOMcTy3+B9L8TVV4xi0TAAAAAElFTkSuQmCC"></a>
+                        </td>
                       </tr>
                       @endforeach
                     </tbody>
