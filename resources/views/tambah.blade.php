@@ -237,11 +237,11 @@
                     <div class="col">  
                         <div class="row">
                             <div class="col">
-                                <input class="form-check-input" type="radio" name="jenis_bukti_penyetoran" id="flexRadioDefault1" value="surat setoran pajak" onclick="changeform1(this)">
+                                <input class="form-check-input" type="radio" name="jenis_bukti_penyetoran" id="surat setoran pajak" value="surat setoran pajak" onclick="changeform1(this)">
                                 <label class="form-check-label" for="bertindak sebagai">Surat Setoran Pajak</label>
                             </div>
                             <div class="col">
-                                <input class="form-check-input" type="radio" name="jenis_bukti_penyetoran" id="flexRadioDefault2" value="pemindahbukuan" onclick="changeform2(this)">
+                                <input class="form-check-input" type="radio" name="jenis_bukti_penyetoran" id="pemindahbukuan" value="pemindahbukuan" onclick="changeform2(this)">
                                 <label class="form-check-label" for="bertindak sebagai">Pemindahbukuan</label>
                             </div>
                         </div>
@@ -269,7 +269,7 @@
                             <label for="">NPWP</label>
                         </div>
                         <div class="col">
-                            <input class="form-control" id="ntpn" maxlength="16" type="text" name="ntpn" placeholder="" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" aria-label="default input">
+                            <input class="form-control" id="npwp" maxlength="16" type="text" name="npwp" placeholder="" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" aria-label="default input">
                         </div>
                     </div>
                     <div class="form-check" style="margin: 0px 0px 10px 410px">
@@ -291,15 +291,17 @@
                             <label for="">Tahun Pajak</label>
                         </div>
                         <div class="col">
-                            <select class="form-select" name="tahun_pajak"id="validationDefault04" required>
+                            <select class="form-select" name="tahun_pajak" id="tahun_pajak" required>
                                 <option selected disabled value="">Pilih Tahun Pajak</option>
                                 <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
                             </select>
                         </div>
                     </div>
                     <div class="row" style="padding: 0% 15% 1% 52%">
                         <div class="col">
-                            <button style="width:100%; height: 120%"type="button" class="button button1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABmJLR0QA/wD/AP+gvaeTAAABEUlEQVQ4ja3UTU5CQRAE4E8XuhfiUv69ArrUg7hRj4EeRyJ3cKWHwETxb6lL2IEuplEDDvAMlbx0Xk2npqa7Z1gTNjJ8A8fYwQdu8FhEuIweJvj89U1wjdKqIvcYooM6tsJdJ/j+KmK9SG5n1g9ivbtIpBH2O0s2u4i8Wi7hXKpFHduoBr8fsRp8M/JOZwU2I5YjvuEEtyHSRwt3wb9G3m7O0Vns1JAKXAm+FbESfNbRFHWr1egSYwtqRJqTodSdv3CIEa6WbKYk1WQodWd6zGY4GUnHyo3HnFjX/GSPw0k7/gd+Oov8XatJd62Md+muDWJtKvKEo4j/wh4ewtmz1KjvOSqCl3BS6DVYhKqZOq0FX1SlQcx+prHVAAAAAElFTkSuQmCC">Cek Surat Setoran Pajak</button>
+                            <button style="width:100%; height: 120%" type="button" class="button button1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABmJLR0QA/wD/AP+gvaeTAAABEUlEQVQ4ja3UTU5CQRAE4E8XuhfiUv69ArrUg7hRj4EeRyJ3cKWHwETxb6lL2IEuplEDDvAMlbx0Xk2npqa7Z1gTNjJ8A8fYwQdu8FhEuIweJvj89U1wjdKqIvcYooM6tsJdJ/j+KmK9SG5n1g9ivbtIpBH2O0s2u4i8Wi7hXKpFHduoBr8fsRp8M/JOZwU2I5YjvuEEtyHSRwt3wb9G3m7O0Vns1JAKXAm+FbESfNbRFHWr1egSYwtqRJqTodSdv3CIEa6WbKYk1WQodWd6zGY4GUnHyo3HnFjX/GSPw0k7/gd+Oov8XatJd62Md+muDWJtKvKEo4j/wh4ewtmz1KjvOSqCl3BS6DVYhKqZOq0FX1SlQcx+prHVAAAAAElFTkSuQmCC">Cek Surat Setoran Pajak</button>
                         </div>
                     </div>
                     <div style="padding:5px;"></div>        
@@ -308,7 +310,7 @@
                             <label for="">Masa Pajak</label>
                         </div>
                         <div class="col">
-                        <select class="form-select" id="masapajak" name="masapajak" required>
+                        <select class="form-select" id="masa_pajak" name="masa_pajak" required>
                           <option selected disabled value="">Pilih Masa Pajak</option>
                           <option>JANUARI</option>
                           <option>FEBRUARI</option>
@@ -331,7 +333,7 @@
                             <label for="">Jenis Pajak(MAP)</label>
                         </div>
                         <div class="col">
-                            <input class="form-control" id="jenispajak" maxlength="6" type="text" name="jenis_pajak" placeholder="" aria-label="default input">
+                            <input class="form-control" id="jenis_pajak" maxlength="6" type="text" name="jenis_pajak" placeholder="" aria-label="default input">
                         </div>
                     </div>
                     <div style="padding:5px;"></div>
@@ -340,7 +342,7 @@
                             <label for="">Jenis Setoran</label>
                         </div>
                         <div class="col">
-                            <input class="form-control" id="jenissetoran" maxlength="3" type="text" name="jenis_setoran" placeholder="" aria-label="default input" >
+                            <input class="form-control" id="jenis_setoran" maxlength="3" type="text" name="jenis_setoran" placeholder="" aria-label="default input" >
                         </div>
                     </div>
                     <div style="padding:5px;"></div>
@@ -349,7 +351,7 @@
                             <label for="">Jumlah Setor(RP)</label>
                         </div>
                         <div class="col">
-                            <input  class="form-control" id="jumlahsetor" oninput="handleChange5(this.value)" type="text" name="jumlah_setor" placeholder="" aria-label="default input" >
+                            <input  class="form-control" id="jumlah_setor" oninput="handleChange5(this.value)" type="text" name="jumlah_setor" placeholder="" aria-label="default input" >
                         </div>
                     </div>
                     <div style="padding:5px;"></div>
@@ -358,7 +360,7 @@
                             <label for="">Tanggal Setor</label>
                         </div>
                         <div class="col">
-                        <input type="date" value="2023-01-01" style="width: 100%;" />
+                        <input type="date" value="2023-01-01" id="tanggal_setor" name="tanggal_setor" style="width: 100%;" />
                         </div>
                     </div>
                     <div class="container">

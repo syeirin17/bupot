@@ -323,7 +323,7 @@
                     <div class="col">
                       <div class="form-group">
                         <label for="exampleFormControlFile1">Upload file</label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1" accept=".xlsx">
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1" accept="FORMAT_UPLOAD_EBUPOT_UNIFIKASI.xlsx">
                       </div>
                 </form>
                 <div class="col">

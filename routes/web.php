@@ -52,10 +52,12 @@ Route::get('impordata', [PPController::class, 'impordata']);
 Route::get('posting', [PPController::class, 'posting']); 
 
 Route::get('sptmasa', [SPTController::class, 'sptmasa']);
-Route::get('penyiapanspt', [SPTController::class, 'penyiapanspt']);
+Route::get('rekambuktisetor', [SPTController::class, 'tambah']); 
+Route::get('daftarbuktisetor', [SPTController::class, 'sptmasa']); 
 Route::post('proses_tambah_buktisetor', [SPTController::class, 'proses_tambah_buktisetor']);
 Route::get('hapus_buktisetor/{id}', [SPTController::class, 'hapus_buktisetor']); 
 
+Route::get('penyiapanspt', [SPTController::class, 'penyiapanspt']);
 
 Route::get('suratbupotpasal', [PPController::class, 'suratbupotpasal']); 
 Route::get('suratbupotsendiri', [PPController::class, 'suratbupotsendiri']); 

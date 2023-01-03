@@ -34,7 +34,7 @@
       /* background-image: url("{{ asset('poltek.jpeg') }}");
       background-repeat: no-repeat;
       background-size: cover; */
-      height: 800px;
+      height: 1000px;
     }
 
     .navbar-expand-lg {

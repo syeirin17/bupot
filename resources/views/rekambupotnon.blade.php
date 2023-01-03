@@ -818,15 +818,11 @@
     let nama = document.getElementById("nama")
     let alamat = document.getElementById("alamat")
     let negara = document.getElementById("negara")
-    let tempatlahir = document.getElementById("tempatlahir")
-    let tgllahir = document.getElementById("tgllahir")
-    let nopaspor = document.getElementById("nopaspor")
-    let nokitab = document.getElementById("nokitab")
     console.log(tin)
-    if (!tin.value || !nama.value || !alamat.value || !negara.value || !tempatlahir.value || !tgllahir.value || !nopaspor.value || !nokitab.value) {
+    if (!tin.value || !nama.value || !alamat.value || !negara.value)  {
       document.getElementById("ppygdipotong").disabled = true
     }
-    if (tin.value && nama.value && alamat.value && negara.value && tempatlahir.value && tgllahir.value && nopaspor.value && nokitab.value) {
+    if (tin.value && nama.value && alamat.value && negara.value ) {
       document.getElementById("ppygdipotong").disabled = false
       document.getElementById("identitaswpdipotong").disabled = true
     }

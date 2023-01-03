@@ -5,7 +5,16 @@ use App\Models\RekamSPT;
 
 class SPTController extends Controller
 {
-    public function tambah()
+    public function sptmasa()
+    {
+        $data = [
+            'npwp' => auth()->user()->npwp,
+            'nama' => auth()->user()->name
+        ];
+        return view('sptmasa',$data);
+    }  
+
+    public function rekambuktisetor()
     {
         $data = [
             'npwp' => auth()->user()->npwp,
@@ -14,18 +23,7 @@ class SPTController extends Controller
         return view('tambah',$data);
     } 
 
-    public function daftarbuktisetor()
-    {
-        $data = [
-            'npwp' => auth()->user()->npwp,
-            'nama' => auth()->user()->name,
-            'daftarbuktisetor' => $tambah->json() ?? []
-
-        ];
-        return view('sptmasa',$data);
-    } 
-
-    public function proses_tambah_buktisetor(Request $request){
+    public function proses_tambah_buktisetor( $request){
         // dd($request->all());
         
             $response = Http::post('http://localhost:8000/api/tambah_buktisetor/',$request->all());
@@ -35,18 +33,16 @@ class SPTController extends Controller
 
     public function daftarbuktisetor()
     {
-        $daftarbuktisetor= Http::get('http://localhost:8000/api/rekam_spt/');
         $data = [
             'npwp' => auth()->user()->npwp,
             'nama' => auth()->user()->name,
-            'daftarbuktisetor' => $rekam_spt->json() ?? []
-
+            'daftarbuktisetor' => RekamSPT::get()
         ];
         return view('sptmasa',$data);
     }
 
      public function hapus_buktisetor($id){
-        $response = Http::get('http://localhost:8000/api/buktisetordelete/'.$id);
+        $response = Http::get('http://localhost:8000/api/hapus_buktisetor/'.$id);
         
         return redirect("sptmasa")->withSuccess('berhasil dihapus');
     } 

@@ -523,18 +523,18 @@
                       </tr>             
                     </thead>               
                     <tbody>
-                      
+                      @foreach ($daftarbuktisetor as $data)
                       <tr style="font-weight: 200; font-size: 15px; text-align: center;">
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>                                
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
+                        <td>1</td>
+                        <td>{{ $data['ntpn'] }}</td>
+                        <td>{{ $data['jenis_pajak'] }}</td>
+                        <td>{{ $data['jenis_setoran'] }}</td>                                
+                        <td>{{ $data['masa_pajak'] }}-{{ $data['tahun_pajak'] }}</td>
+                        <td>{{ $data['tanggal_setor'] }}</td>
+                        <td>{{ $data['jumlah_setor'] }}</td>
                         <td><img src="hapus.png" style="width: 20px"></td>
                       </tr>
-                      
+                      @endforeach
                     </tbody>
                   </table>
                 </div>
